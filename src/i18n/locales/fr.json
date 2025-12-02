@@ -1,0 +1,125 @@
+{
+  "navbar": {
+    "brand": "Riad Alassala",
+    "tagline": "AU-DELÀ ET AU-DESSUS",
+    "checkRates": "RÉSERVEZ",
+    "overview": "APERÇU",
+    "accommodation": "HÉBERGEMENT",
+    "dining": "RESTAURATION",
+    "exploringMedina": "EXPLORER LA MÉDINA",
+    "meetingsEvents": "RÉUNIONS & ÉVÉNEMENTS",
+    "experiences": "EXPÉRIENCES"
+  },
+  "footer": {
+    "copyright": "© {{year}} Riad Alassala",
+    "privacy": "Confidentialité",
+    "terms": "Conditions",
+    "contact": "Contact"
+  },
+  "hero": {
+    "luxuryRiad": "Riad de Luxe • Médina de Marrakech"
+  },
+  "booking": {
+    "checkIn": "Arrivée",
+    "checkOut": "Départ",
+    "guests": "Invités",
+    "checkRates": "Réservez",
+    "adults": {
+      "one": "1 Adulte",
+      "two": "2 Adultes",
+      "three": "3 Adultes",
+      "family": "Famille"
+    }
+  },
+  "overview": {
+    "hero": {
+      "title": "Riad Alassala",
+      "subtitle": "Un havre de paix dans le cœur de l'ancienne médina, où l'élégance contemporaine rencontre l'âme intemporelle de Marrakech."
+    },
+    "intro": {
+      "title": "Riad Alassala",
+      "description": "Riad Alassala accueille ses invités dans un monde serein de lumière douce, de cours parfumées et d'hospitalité marocaine réfléchie. Des détails artisanaux, des alcôves tranquilles et des œuvres d'art soigneusement sélectionnées créent une atmosphère discrète mais accueillante, parfaite pour des matinées paisibles et de longues soirées aux chandelles au-dessus des toits de la médina."
+    },
+    "features": {
+      "hiddenSanctuary": "Un Sanctuaire Urbain Caché",
+      "courtyardPool": "Piscine & Terrasses de Cour",
+      "moroccanCuisine": "Cuisine Marocaine de Saison",
+      "tailoredExperiences": "Expériences Sur Mesure dans la Médina"
+    },
+    "discover": {
+      "eyebrow": "Découvrir",
+      "title": "Votre Histoire à Marrakech",
+      "subtitle": "Des rassemblements festifs intimes au coin du feu aux petits-déjeuners ensoleillés sur la terrasse, Riad Alassala est conçu pour des moments où vous voudrez vous attarder."
+    },
+    "cards": {
+      "festive": {
+        "title": "Expériences Festives",
+        "description": "Célébrez la saison avec des dîners aux chandelles, de la musique oud en direct et des célébrations sur mesure adaptées à votre rassemblement.",
+        "cta": "Découvrir Plus"
+      },
+      "accommodations": {
+        "title": "Hébergements",
+        "description": "Les suites et chambres allient zellige artisanal, draps doux et palettes apaisantes, créant un sanctuaire loin de la médina animée.",
+        "cta": "Explorer les Chambres"
+      },
+      "dining": {
+        "title": "Restauration",
+        "description": "Savourez des saveurs marocaines modernes, des apéritifs sur le toit et des thés de l'après-midi tranquilles dans nos salons et terrasses paisibles.",
+        "cta": "Restauration & Salons"
+      }
+    },
+    "journey": {
+      "eyebrow": "Offre Vedette",
+      "title": "Moments en Famille dans la Médina",
+      "description": "Partagez des matinées paisibles avec des petits-déjeuners sur le toit, promenez-vous dans des ruelles éclairées par des lanternes avec un guide privé et retournez à votre sanctuaire de cour. Notre offre familiale comprend le petit-déjeuner quotidien, une expérience médina sur mesure et des surprises réfléchies pour les jeunes invités.",
+      "bookNow": "Réserver Maintenant",
+      "details": "Détails"
+    },
+    "giftCard": {
+      "eyebrow": "Cadeaux",
+      "title": "La Carte Cadeau Riad Alassala",
+      "subtitle": "Partagez la médina avec quelqu'un de spécial. Nos cartes cadeaux peuvent être adaptées aux séjours, aux rituels spa ou aux dîners privés sur le toit avec vue sur la ville.",
+      "cta": "Acheter une Carte Cadeau"
+    }
+  },
+  "accommodation": {
+    "hero": {
+      "title": "Hébergement",
+      "subtitle": "Des chambres et suites pensées avec soin qui reflètent les textures et la palette de Marrakech tout en offrant tout le confort contemporain."
+    },
+    "section": {
+      "eyebrow": "Séjourner",
+      "title": "Suites & Chambres",
+      "subtitle": "Choisissez parmi des chambres intimes pour des escapades tranquilles ou des suites spacieuses parfaites pour des séjours plus longs et des rassemblements familiaux."
+    },
+    "rooms": {
+      "superior": {
+        "name": "Chambre Dar Superior",
+        "description": "Des tons terre doux, des textiles tissés à la main et de hautes fenêtres donnant sur la cour intérieure créent une retraite calme après des journées dans la médina."
+      },
+      "patio": {
+        "name": "Suite Patio",
+        "description": "Des suites spacieuses avec un coin salon privé, des détails en zellige et un accès direct au patio central et à sa fontaine douce."
+      },
+      "rooftop": {
+        "name": "Suite Terrasse sur le Toit",
+        "description": "Réveillez-vous à la lumière dorée de la médina et terminez la journée avec du thé à la menthe sous les étoiles sur votre propre terrasse sur le toit."
+      },
+      "grand": {
+        "name": "Grande Maison de la Médina",
+        "description": "Une résidence privée multi-pièces avec salon, espace de restauration et utilisation exclusive d'une piscine plongeante sur le toit et d'un ponton ensoleillé."
+      },
+      "upToGuests": "Jusqu'à 3 Invités",
+      "breakfastIncluded": "Petit-Déjeuner Inclus",
+      "viewDetails": "Voir les Détails",
+      "checkRates": "Réservez"
+    }
+  },
+  "pages": {
+    "dining": "Restauration",
+    "exploringMedina": "Explorer la Médina",
+    "meetingsEvents": "Réunions & Événements",
+    "experiences": "Expériences"
+  }
+}
+

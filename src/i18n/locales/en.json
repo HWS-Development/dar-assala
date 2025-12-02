@@ -1,0 +1,125 @@
+{
+  "navbar": {
+    "brand": "Riad Alassala",
+    "tagline": "BEYOND AND ABOVE",
+    "checkRates": "BOOK",
+    "overview": "OVERVIEW",
+    "accommodation": "ACCOMMODATION",
+    "dining": "DINING",
+    "exploringMedina": "EXPLORING MEDINA",
+    "meetingsEvents": "MEETINGS & EVENTS",
+    "experiences": "EXPERIENCES"
+  },
+  "footer": {
+    "copyright": "© {{year}} Riad Alassala",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "contact": "Contact"
+  },
+  "hero": {
+    "luxuryRiad": "Luxury Riad • Marrakech Medina"
+  },
+  "booking": {
+    "checkIn": "Check In",
+    "checkOut": "Check Out",
+    "guests": "Guests",
+    "checkRates": "Book ",
+    "adults": {
+      "one": "1 Adult",
+      "two": "2 Adults",
+      "three": "3 Adults",
+      "family": "Family"
+    }
+  },
+  "overview": {
+    "hero": {
+      "title": "Riad Alassala",
+      "subtitle": "A tranquil riad retreat in the heart of the old medina, where contemporary elegance meets the timeless soul of Marrakech."
+    },
+    "intro": {
+      "title": "Riad Alassala",
+      "description": "Riad Alassala welcomes guests into a serene world of warm light, perfumed courtyards and thoughtful Moroccan hospitality. Handcrafted details, quiet alcoves and curated art pieces create a discreet yet inviting atmosphere, perfect for slow mornings and long, candlelit evenings above the medina rooftops."
+    },
+    "features": {
+      "hiddenSanctuary": "A Hidden City Sanctuary",
+      "courtyardPool": "Courtyard Pool & Terraces",
+      "moroccanCuisine": "Seasonal Moroccan Cuisine",
+      "tailoredExperiences": "Tailored Medina Experiences"
+    },
+    "discover": {
+      "eyebrow": "Discover",
+      "title": "Your Marrakech Story",
+      "subtitle": "From intimate festive gatherings by the fire to sunlit breakfasts on the terrace, Riad Alassala is crafted for moments you will want to linger in."
+    },
+    "cards": {
+      "festive": {
+        "title": "Festive Experiences",
+        "description": "Celebrate the season with candlelit dinners, live oud music and bespoke celebrations tailored to your gathering.",
+        "cta": "Discover More"
+      },
+      "accommodations": {
+        "title": "Accommodations",
+        "description": "Suites and rooms blend handcrafted zellige, soft linens and calm palettes, creating a sanctuary from the vibrant medina.",
+        "cta": "Explore Rooms"
+      },
+      "dining": {
+        "title": "Dining",
+        "description": "Savor modern Moroccan flavors, rooftop aperitifs and leisurely afternoon teas in our tranquil salons and terraces.",
+        "cta": "Dining & Lounges"
+      }
+    },
+    "journey": {
+      "eyebrow": "Featured Offer",
+      "title": "Family Moments in the Medina",
+      "description": "Share slow mornings over rooftop breakfasts, wander lantern‑lit alleys with a private guide and return to your own courtyard sanctuary. Our family offer includes daily breakfast, a tailored medina experience and thoughtful surprises for younger guests.",
+      "bookNow": "Book Now",
+      "details": "Details"
+    },
+    "giftCard": {
+      "eyebrow": "Gifting",
+      "title": "The Riad Alassala Gift Card",
+      "subtitle": "Share the medina with someone special. Our gift cards may be tailored to overnight stays, spa rituals or private rooftop dinners overlooking the city.",
+      "cta": "Shop Gift Card"
+    }
+  },
+  "accommodation": {
+    "hero": {
+      "title": "Accommodation",
+      "subtitle": "Thoughtfully designed rooms and suites that echo the textures and palette of Marrakech while offering every contemporary comfort."
+    },
+    "section": {
+      "eyebrow": "Stay",
+      "title": "Suites & Rooms",
+      "subtitle": "Choose from intimate rooms for quiet escapes or expansive suites perfect for longer stays and family gatherings."
+    },
+    "rooms": {
+      "superior": {
+        "name": "Dar Superior Room",
+        "description": "Soft earth tones, hand‑woven textiles and tall windows overlooking the inner courtyard create a calm retreat after days in the medina."
+      },
+      "patio": {
+        "name": "Patio Suite",
+        "description": "Spacious suites with a private seating area, zellige details and direct access to the central patio and its gentle fountain."
+      },
+      "rooftop": {
+        "name": "Rooftop Terrace Suite",
+        "description": "Wake to golden medina light and end the day with mint tea under the stars on your own rooftop terrace lounge."
+      },
+      "grand": {
+        "name": "Grand Medina House",
+        "description": "A private multi‑room residence with salon, dining space and exclusive use of a rooftop plunge pool and sun deck."
+      },
+      "upToGuests": "Up to 3 Guests",
+      "breakfastIncluded": "Breakfast Included",
+      "viewDetails": "View Details",
+      "checkRates": "Book"
+    }
+  },
+  "pages": {
+    "dining": "Dining",
+    "exploringMedina": "Exploring Medina",
+    "meetingsEvents": "Meetings & Events",
+    "experiences": "Experiences"
+  }
+}
+
