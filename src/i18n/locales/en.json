@@ -3,7 +3,7 @@
     "brand": "Riad Alassala",
     "tagline": "BEYOND AND ABOVE",
     "checkRates": "BOOK",
-    "overview": "OVERVIEW",
+    "home": "HOME",
     "accommodation": "ACCOMMODATION",
     "dining": "DINING",
     "exploringMedina": "EXPLORING MEDINA",
@@ -17,7 +17,7 @@
     "contact": "Contact"
   },
   "hero": {
-    "luxuryRiad": "Luxury Riad • Marrakech Medina"
+    "luxuryRiad": "Luxury Riad • Fes  Medina"
   },
   "booking": {
     "checkIn": "Check In",
@@ -34,7 +34,7 @@
   "overview": {
     "hero": {
       "title": "Riad Alassala",
-      "subtitle": "A tranquil riad retreat in the heart of the old medina, where contemporary elegance meets the timeless soul of Marrakech."
+      "subtitle": "A tranquil riad retreat in the heart of the old medina, where contemporary elegance meets the timeless soul of Fes ."
     },
     "intro": {
       "title": "Riad Alassala",
@@ -48,7 +48,7 @@
     },
     "discover": {
       "eyebrow": "Discover",
-      "title": "Your Marrakech Story",
+      "title": "Your Fes  Story",
       "subtitle": "From intimate festive gatherings by the fire to sunlit breakfasts on the terrace, Riad Alassala is crafted for moments you will want to linger in."
     },
     "cards": {
@@ -80,12 +80,66 @@
       "title": "The Riad Alassala Gift Card",
       "subtitle": "Share the medina with someone special. Our gift cards may be tailored to overnight stays, spa rituals or private rooftop dinners overlooking the city.",
       "cta": "Shop Gift Card"
+    },
+    "reviews": {
+      "title": "What people who stayed here loved:",
+      "viewAll": "View all comments",
+      "learnMore": "Learn more",
+      "items": [
+        {
+          "name": "El",
+          "country": "Switzerland",
+          "text": "We simply loved our stay at Riad Alassala Fès, a real favorite! The riad is splendid, with its grandeur, its charm and all its history that can be felt in every detail. A huge thank you to Ali, who welcomed us..."
+        },
+        {
+          "name": "Omair",
+          "country": "United Arab Emirates",
+          "text": "The hostesses, Fati and Fouzia, were extremely welcoming and attentive to our needs."
+        },
+        {
+          "name": "Marc",
+          "country": "France",
+          "text": "Riad very well located. Attentive, available, warm staff. Very good cuisine. A big thank you for the excursions and the drivers. Congratulations to Ali, the manager, Fathi, Houzia and Ali the driver and the guides Bouchtia and..."
+        },
+        {
+          "name": "Lahcen",
+          "country": "Germany",
+          "text": "Very welcoming and friendly staff. We spent one night in the riad and greatly appreciated our stay. The location is perfect for discovering the old city on foot."
+        },
+        {
+          "name": "Faycal",
+          "country": "France",
+          "text": "Very nice Riad. Right in the Medina and not too far from Batha roundabout near the Post Office street; convenient for easily taking a taxi, especially to go to the CTM bus station. Superb view of the Medina from the terrace...."
+        },
+        {
+          "name": "Ababou",
+          "country": "France",
+          "text": "An exceptional riad! The place is magnificent, very clean and ideally located in the medina. The calm that reigns there is a real asset, as is the panoramic view from the terrace, absolutely splendid. A big thank you to Zeineb, always..."
+        }
+      ]
+    },
+    "location": {
+      "title": "Location",
+      "subtitle": "Find us in the heart of the medina"
+    },
+    "contact": {
+      "title": "Contact",
+      "subtitle": "Get in touch with us",
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address"
+    },
+    "roomsSection": {
+      "eyebrow": "Accommodation",
+      "title": "Rooms & Suites",
+      "subtitle": "Discover our carefully curated selection of rooms and suites, each designed to offer comfort and authentic Moroccan elegance.",
+      "viewAllRooms": "View All Rooms"
     }
   },
   "accommodation": {
     "hero": {
       "title": "Accommodation",
-      "subtitle": "Thoughtfully designed rooms and suites that echo the textures and palette of Marrakech while offering every contemporary comfort."
+      "subtitle": "Thoughtfully designed rooms and suites that echo the textures and palette of Fes  while offering every contemporary comfort."
     },
     "section": {
       "eyebrow": "Stay",
@@ -109,10 +163,84 @@
         "name": "Grand Medina House",
         "description": "A private multi‑room residence with salon, dining space and exclusive use of a rooftop plunge pool and sun deck."
       },
+      "standardDoubleRoom": {
+        "name": "Standard Double Room",
+        "description": "A comfortable double room featuring traditional Moroccan design elements, modern amenities, and views of the medina. Perfect for couples seeking an authentic Fes experience.",
+        "features": ["2 Guests", "Double Bed", "En-suite Bathroom"]
+      },
+      "standardDoubleRoom2": {
+        "name": "Standard Double Room (2)",
+        "description": "Another beautifully appointed double room with handcrafted details, soft linens, and a serene atmosphere. Ideal for a peaceful retreat after exploring the medina.",
+        "features": ["2 Guests", "Double Bed", "City View"]
+      },
+      "juniorSuiteS2": {
+        "name": "Junior Suite (S2)",
+        "description": "Spacious junior suite with separate seating area, traditional zellige tiles, and enhanced comfort. Features a private balcony overlooking the courtyard.",
+        "features": ["3 Guests", "King Bed", "Sitting Area", "Balcony"]
+      },
+      "juniorSuiteS1": {
+        "name": "Junior Suite (S1)",
+        "description": "Elegant junior suite combining Moroccan craftsmanship with contemporary luxury. Includes a comfortable living space and premium amenities.",
+        "features": ["3 Guests", "King Bed", "Living Area", "Premium Amenities"]
+      },
+      "juniorSuite2mez": {
+        "name": "Junior Suite (2Mez)",
+        "description": "Unique two-level junior suite with traditional mezzanine design. Features a cozy sleeping area above and a comfortable lounge below.",
+        "features": ["3 Guests", "Mezzanine Design", "Two Levels", "Lounge Area"]
+      },
+      "executiveSuite": {
+        "name": "Executive Suite",
+        "description": "Luxurious executive suite with expansive living space, premium furnishings, and exclusive access to private terraces. Perfect for extended stays.",
+        "features": ["4 Guests", "King Bed", "Separate Living Room", "Private Terrace"]
+      },
+      "duplex": {
+        "name": "Duplex",
+        "description": "Stunning two-story duplex residence with multiple rooms, private salon, and exclusive rooftop access. The ultimate medina experience for families or groups.",
+        "features": ["6 Guests", "Multiple Bedrooms", "Private Salon", "Rooftop Access"]
+      },
+      "budgetSingleRoom": {
+        "name": "Budget Single Room",
+        "description": "Cozy single room offering comfort and value in the heart of the medina. Thoughtfully designed with essential amenities for solo travelers.",
+        "features": ["1 Guest", "Single Bed", "Essential Amenities"]
+      },
+      "budgetSingleRoom2": {
+        "name": "Budget Single Room (2)",
+        "description": "Another affordable single room option with traditional charm and modern convenience. Perfect for budget-conscious travelers seeking authentic medina accommodation.",
+        "features": ["1 Guest", "Single Bed", "Medina View"]
+      },
       "upToGuests": "Up to 3 Guests",
       "breakfastIncluded": "Breakfast Included",
       "viewDetails": "View Details",
-      "checkRates": "Book"
+      "checkRates": "Book",
+      "book": "BOOK",
+      "details": "DETAILS"
+    }
+  },
+  "dining": {
+    "hero": {
+      "title": "Dining",
+      "subtitle": "An authentic culinary experience in the heart of Riad Alassala"
+    },
+    "presentation": {
+      "title": "Restaurant Presentation",
+      "description": "Discover our restaurant, a haven of flavors where traditional Moroccan cuisine meets contemporary refinement. In an elegant and warm setting, our chefs prepare dishes that celebrate the richness of local products and ancestral know-how."
+    },
+    "concept": {
+      "title": "Culinary Concept",
+      "description": "Our culinary philosophy is based on respect for authentic flavors and seasonal products. Each dish tells a story, combining traditional recipes with a modern touch, for an unforgettable gastronomic journey through the flavors of Morocco."
+    },
+    "rooftop": {
+      "title": "Rooftop Experience",
+      "description": "Enjoy an exceptional dining experience on our rooftop terrace, with panoramic views of the medina. Whether for breakfast, lunch or dinner, each moment becomes a celebration of flavors and conviviality under the Moroccan sky."
+    },
+    "breakfast": {
+      "title": "Breakfast",
+      "description": "Start your day with a generous breakfast featuring fresh local products, homemade pastries, seasonal fruits and traditional Moroccan specialties. A moment of sweetness to prepare you for a day of discovery in Fes."
+    },
+    "menu": {
+      "title": "Menu",
+      "description": "Discover our carefully crafted menu, featuring traditional Moroccan dishes and contemporary creations. Each recipe is prepared with fresh, local ingredients, honoring the culinary heritage of Fes.",
+      "downloadButton": "Download Menu"
     }
   },
   "pages": {

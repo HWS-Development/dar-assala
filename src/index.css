@@ -14,3 +14,35 @@
   }
 }
 
+/* Swiper Custom Styles */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #1a1a1a !important;
+  background: white;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50%;
+  border: 2px solid #1a1a1a;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 16px !important;
+  font-weight: bold;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: #1a1a1a;
+  color: white !important;
+}
+
+.swiper-pagination-bullet {
+  background: #1a1a1a !important;
+  opacity: 0.3;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+}
+

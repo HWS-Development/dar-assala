@@ -5,6 +5,7 @@ import Footer from '../components/Footer.jsx';
 import Hero from '../components/Hero.jsx';
 import FadeIn from '../components/FadeIn.jsx';
 import SectionTitle from '../components/SectionTitle.jsx';
+import RoomCard from '../components/RoomCard.jsx';
 
 const roomKeys = ['superior', 'patio', 'rooftop', 'grand'];
 
@@ -34,6 +35,63 @@ export default function Accommodation() {
       />
 
       <main className="pb-16 pt-14">
+        {/* Room Cards Section with Swiper */}
+        <section className="container-wide space-y-12 py-12">
+          <RoomCard
+            roomFolder="standard-double-room"
+            roomTitle={t('accommodation.rooms.standardDoubleRoom.name')}
+            description={t('accommodation.rooms.standardDoubleRoom.description')}
+            features={t('accommodation.rooms.standardDoubleRoom.features', { returnObjects: true })}
+          />
+          <RoomCard
+            roomFolder="standard-double-room-2"
+            roomTitle={t('accommodation.rooms.standardDoubleRoom2.name')}
+            description={t('accommodation.rooms.standardDoubleRoom2.description')}
+            features={t('accommodation.rooms.standardDoubleRoom2.features', { returnObjects: true })}
+          />
+          <RoomCard
+            roomFolder="junior-suite-s2"
+            roomTitle={t('accommodation.rooms.juniorSuiteS2.name')}
+            description={t('accommodation.rooms.juniorSuiteS2.description')}
+            features={t('accommodation.rooms.juniorSuiteS2.features', { returnObjects: true })}
+          />
+          <RoomCard
+            roomFolder="junior-suite-s1"
+            roomTitle={t('accommodation.rooms.juniorSuiteS1.name')}
+            description={t('accommodation.rooms.juniorSuiteS1.description')}
+            features={t('accommodation.rooms.juniorSuiteS1.features', { returnObjects: true })}
+          />
+          <RoomCard
+            roomFolder="junior-suite-2mez"
+            roomTitle={t('accommodation.rooms.juniorSuite2mez.name')}
+            description={t('accommodation.rooms.juniorSuite2mez.description')}
+            features={t('accommodation.rooms.juniorSuite2mez.features', { returnObjects: true })}
+          />
+          <RoomCard
+            roomFolder="executive-suite"
+            roomTitle={t('accommodation.rooms.executiveSuite.name')}
+            description={t('accommodation.rooms.executiveSuite.description')}
+            features={t('accommodation.rooms.executiveSuite.features', { returnObjects: true })}
+          />
+          <RoomCard
+            roomFolder="duplex"
+            roomTitle={t('accommodation.rooms.duplex.name')}
+            description={t('accommodation.rooms.duplex.description')}
+            features={t('accommodation.rooms.duplex.features', { returnObjects: true })}
+          />
+          <RoomCard
+            roomFolder="budget-single-room"
+            roomTitle={t('accommodation.rooms.budgetSingleRoom.name')}
+            description={t('accommodation.rooms.budgetSingleRoom.description')}
+            features={t('accommodation.rooms.budgetSingleRoom.features', { returnObjects: true })}
+          />
+          <RoomCard
+            roomFolder="budget-single-room-2"
+            roomTitle={t('accommodation.rooms.budgetSingleRoom2.name')}
+            description={t('accommodation.rooms.budgetSingleRoom2.description')}
+            features={t('accommodation.rooms.budgetSingleRoom2.features', { returnObjects: true })}
+          />
+        </section>
         <section className="container-wide space-y-10">
           <SectionTitle
             eyebrow={t('accommodation.section.eyebrow')}

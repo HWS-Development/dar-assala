@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
@@ -6,6 +7,8 @@ import Hero from '../components/Hero.jsx';
 import FadeIn from '../components/FadeIn.jsx';
 import SectionTitle from '../components/SectionTitle.jsx';
 import ImageCard from '../components/ImageCard.jsx';
+import Reviews from '../components/Reviews.jsx';
+import RoomPreviewCard from '../components/RoomPreviewCard.jsx';
 
 export default function Overview() {
   const { t } = useTranslation();
@@ -46,75 +49,110 @@ export default function Overview() {
           </div>
         </section>
 
-        <section className="container-wide space-y-10">
-          <SectionTitle
-            eyebrow={t('overview.discover.eyebrow')}
-            title={t('overview.discover.title')}
-            subtitle={t('overview.discover.subtitle')}
-          />
+       
 
-          <div className="grid gap-6 md:grid-cols-3">
-            <ImageCard
-              title={t('overview.cards.festive.title')}
-              description={t('overview.cards.festive.description')}
-              cta={t('overview.cards.festive.cta')}
-            />
-            <ImageCard
-              title={t('overview.cards.accommodations.title')}
-              description={t('overview.cards.accommodations.description')}
-              cta={t('overview.cards.accommodations.cta')}
-            />
-            <ImageCard
-              title={t('overview.cards.dining.title')}
-              description={t('overview.cards.dining.description')}
-              cta={t('overview.cards.dining.cta')}
-            />
-          </div>
-        </section>
+        
 
-        <section className="container-wide grid gap-10 md:grid-cols-[1.1fr,1fr] md:items-center">
-          <FadeIn className="h-80 overflow-hidden bg-neutral-300 md:h-full">
-            <div className="h-full w-full bg-[url('https://images.pexels.com/photos/27163975/pexels-photo-27163975.jpeg?auto=compress&cs=tinysrgb&w=1600')] bg-cover bg-center" />
+        
+
+       
+
+        {/* Location Section */}
+        <section className="container-wide space-y-6">
+          <FadeIn>
+            <SectionTitle
+              eyebrow="Find Us"
+              title={t('overview.location.title')}
+              subtitle={t('overview.location.subtitle')}
+            />
           </FadeIn>
 
-          <FadeIn className="border border-neutral-200 bg-white px-7 py-8 shadow-sm">
-            <p className="text-[11px] tracking-[0.3em] uppercase text-neutral-500">
-              {t('overview.journey.eyebrow')}
-            </p>
-            <h3 className="mt-3 font-display text-2xl tracking-[0.18em] uppercase">
-              {t('overview.journey.title')}
-            </h3>
-            <p className="mt-4 text-sm leading-relaxed text-neutral-600">
-              {t('overview.journey.description')}
-            </p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <button className="bg-brand-dark px-6 py-2 text-xs tracking-[0.24em] uppercase text-white">
-                {t('overview.journey.bookNow')}
-              </button>
-              <button className="border border-neutral-900 px-6 py-2 text-xs tracking-[0.24em] uppercase">
-                {t('overview.journey.details')}
-              </button>
+          <FadeIn className="w-full h-96 rounded-sm overflow-hidden border border-neutral-200 shadow-sm">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.1234567890123!2d-4.9781406!3d34.0596204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd9ff4a9bae5a97d%3A0x79ad14c9dc151882!2sRiad%20Alassala%20Fes!5e0!3m2!1sen!2sus!4v1733164800000!5m2!1sen!2sus"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Riad Alassala Location"
+            />
+          </FadeIn>
+        </section>
+
+        {/* Contact Section */}
+        <section className="container-wide space-y-6">
+          <FadeIn>
+            <SectionTitle
+              eyebrow="Get in Touch"
+              title={t('overview.contact.title')}
+              subtitle={t('overview.contact.subtitle')}
+            />
+          </FadeIn>
+
+          <FadeIn className="grid gap-8 md:grid-cols-3">
+            <div className="text-center md:text-left">
+              <h4 className="text-sm tracking-[0.2em] uppercase text-neutral-500 mb-2">
+                {t('overview.contact.phone')}
+              </h4>
+              <p className="text-base text-neutral-900">+212 XXX XXX XXX</p>
+            </div>
+            <div className="text-center md:text-left">
+              <h4 className="text-sm tracking-[0.2em] uppercase text-neutral-500 mb-2">
+                {t('overview.contact.email')}
+              </h4>
+              <p className="text-base text-neutral-900">contact@riadalassala.com</p>
+            </div>
+            <div className="text-center md:text-left">
+              <h4 className="text-sm tracking-[0.2em] uppercase text-neutral-500 mb-2">
+                {t('overview.contact.address')}
+              </h4>
+              <p className="text-base text-neutral-900">Medina, Fes, Morocco</p>
             </div>
           </FadeIn>
         </section>
 
-        <section className="container-wide grid gap-10 md:grid-cols-[1fr,1.1fr] md:items-center">
-          <FadeIn className="order-2 h-80 overflow-hidden bg-neutral-300 md:order-1 md:h-full">
-            <div className="h-full w-full bg-[url('https://images.pexels.com/photos/27163975/pexels-photo-27163975.jpeg?auto=compress&cs=tinysrgb&w=1600')] bg-cover bg-center" />
+        {/* Rooms & Suites Preview Section */}
+        <section className="container-wide space-y-10 py-16">
+          <FadeIn>
+            <SectionTitle
+              eyebrow={t('overview.roomsSection.eyebrow')}
+              title={t('overview.roomsSection.title')}
+              subtitle={t('overview.roomsSection.subtitle')}
+            />
           </FadeIn>
 
-          <FadeIn className="order-1 md:order-2 space-y-4">
-            <SectionTitle
-              align="left"
-              eyebrow={t('overview.giftCard.eyebrow')}
-              title={t('overview.giftCard.title')}
-              subtitle={t('overview.giftCard.subtitle')}
+          <div className="grid gap-8 md:grid-cols-3">
+            <RoomPreviewCard
+              roomFolder="standard-double-room"
+              roomTitle={t('accommodation.rooms.standardDoubleRoom.name')}
+              description={t('accommodation.rooms.standardDoubleRoom.description')}
             />
-            <button className="mt-4 bg-brand-dark px-7 py-3 text-xs tracking-[0.24em] uppercase text-white">
-              {t('overview.giftCard.cta')}
-            </button>
+            <RoomPreviewCard
+              roomFolder="junior-suite-s1"
+              roomTitle={t('accommodation.rooms.juniorSuiteS1.name')}
+              description={t('accommodation.rooms.juniorSuiteS1.description')}
+            />
+            <RoomPreviewCard
+              roomFolder="executive-suite"
+              roomTitle={t('accommodation.rooms.executiveSuite.name')}
+              description={t('accommodation.rooms.executiveSuite.description')}
+            />
+          </div>
+
+          <FadeIn className="flex justify-center pt-4">
+            <Link
+              to="/accommodation"
+              className="bg-brand-dark text-white px-6 py-3 text-xs tracking-wide uppercase hover:bg-neutral-800 transition-colors"
+            >
+              {t('overview.roomsSection.viewAllRooms')}
+            </Link>
           </FadeIn>
         </section>
+
+         {/* Reviews Section */}
+         <Reviews />
       </main>
 
       <Footer />

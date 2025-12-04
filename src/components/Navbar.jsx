@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Logo from './Logo.jsx';
 
 const navItems = [
-  { key: 'overview', to: '/' },
+  { key: 'home', to: '/' },
   { key: 'accommodation', to: '/accommodation' },
   { key: 'dining', to: '/dining' },
   { key: 'exploringMedina', to: '/exploring-medina' },
