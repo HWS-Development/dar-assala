@@ -20,7 +20,7 @@ export default function Dining() {
         <motion.div
           style={{
             y,
-            backgroundImage: "url('/images/dining/hero.jpg')"
+            backgroundImage: "url('/images/dining/Screenshot 2025-12-06 213636.png')"
           }}
           className="absolute inset-0 bg-cover bg-center"
         />
@@ -58,7 +58,7 @@ export default function Dining() {
             <FadeIn className="h-80 md:h-96 w-full overflow-hidden rounded-sm">
               <div
                 className="h-full w-full bg-cover bg-center"
-                style={{ backgroundImage: "url('/images/dining/restaurant.jpg')" }}
+                style={{ backgroundImage: "url('/images/dining/Screenshot 2025-12-06 214229.png')" }}
               />
             </FadeIn>
           </div>
@@ -76,7 +76,7 @@ export default function Dining() {
           <FadeIn className="w-full h-96 md:h-[500px] overflow-hidden rounded-sm">
             <div
               className="h-full w-full bg-cover bg-center"
-              style={{ backgroundImage: "url('/images/dining/concept.jpg')" }}
+              style={{ backgroundImage: "url('/images/dining/Screenshot 2025-12-06 213636.png')" }}
             />
           </FadeIn>
         </section>
@@ -109,7 +109,7 @@ export default function Dining() {
               <FadeIn className="h-80 md:h-96 w-full overflow-hidden rounded-sm">
                 <div
                   className="h-full w-full bg-cover bg-center"
-                  style={{ backgroundImage: "url('/images/dining/breakfast.jpg')" }}
+                  style={{ backgroundImage: "url('/images/dining/Screenshot 2025-12-06 214649.png')" }}
                 />
               </FadeIn>
 

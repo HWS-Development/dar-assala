@@ -9,7 +9,8 @@ const navItems = [
   { key: 'dining', to: '/dining' },
   { key: 'exploringMedina', to: '/exploring-medina' },
   { key: 'meetingsEvents', to: '/meetings-events' },
-  { key: 'experiences', to: '/experiences' }
+  { key: 'experiences', to: '/experiences' },
+  { key: 'gallery', to: '/gallery' }
 ];
 
 export default function Navbar() {

@@ -6,6 +6,7 @@ import Dining from './pages/Dining.jsx';
 import ExploringMedina from './pages/ExploringMedina.jsx';
 import MeetingsEvents from './pages/MeetingsEvents.jsx';
 import Experiences from './pages/Experiences.jsx';
+import Gallery from './pages/Gallery.jsx';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path="/exploring-medina" element={<ExploringMedina />} />
       <Route path="/meetings-events" element={<MeetingsEvents />} />
       <Route path="/experiences" element={<Experiences />} />
+      <Route path="/gallery" element={<Gallery />} />
     </Routes>
   );
 }

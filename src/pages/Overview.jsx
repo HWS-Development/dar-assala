@@ -124,20 +124,30 @@ export default function Overview() {
           </FadeIn>
 
           <div className="grid gap-8 md:grid-cols-3">
-            <RoomPreviewCard
-              roomFolder="standard-double-room"
-              roomTitle={t('accommodation.rooms.standardDoubleRoom.name')}
-              description={t('accommodation.rooms.standardDoubleRoom.description')}
-            />
+          <RoomPreviewCard
+  roomFolder="standard-double-room"
+  roomTitle={t('accommodation.rooms.standardDoubleRoom.name')}
+  description={t('accommodation.rooms.standardDoubleRoom.description')}
+  roomImages={[
+    "Screenshot 2025-12-05 131817.png"
+  ]}
+/>
+
             <RoomPreviewCard
               roomFolder="junior-suite-s1"
               roomTitle={t('accommodation.rooms.juniorSuiteS1.name')}
               description={t('accommodation.rooms.juniorSuiteS1.description')}
+              roomImages={[
+                "Screenshot 2025-12-05 131817.png"
+              ]}
             />
             <RoomPreviewCard
               roomFolder="executive-suite"
               roomTitle={t('accommodation.rooms.executiveSuite.name')}
               description={t('accommodation.rooms.executiveSuite.description')}
+              roomImages={[
+                "Screenshot 2025-12-05 131817.png"
+              ]}
             />
           </div>
 

@@ -8,7 +8,8 @@
     "dining": "RESTAURATION",
     "exploringMedina": "EXPLORER LA MÉDINA",
     "meetingsEvents": "RÉUNIONS & ÉVÉNEMENTS",
-    "experiences": "EXPÉRIENCES"
+    "experiences": "EXPÉRIENCES",
+    "gallery": "GALERIE"
   },
   "footer": {
     "copyright": "© {{year}} Riad Alassala",
@@ -241,6 +242,128 @@
       "title": "Menu",
       "description": "Découvrez notre menu soigneusement élaboré, mettant en vedette des plats marocains traditionnels et des créations contemporaines. Chaque recette est préparée avec des ingrédients frais et locaux, honorant le patrimoine culinaire de Fès.",
       "downloadButton": "Télécharger le Menu"
+    }
+  },
+  "exploringMedina": {
+    "hero": {
+      "title": "Exploring la Médina",
+      "subtitle": "Découvrez les richesses culturelles, artisanales et historiques de la médina de Fès."
+    },
+    "featured": {
+      "eyebrow": "À ne pas manquer",
+      "title": "Les Monuments Incontournables",
+      "description": "Découvrez les lieux emblématiques de la médina : la Bou Inania, la Place Seffarine, le Mausolée Moulay Idriss, les portes historiques et les merveilles architecturales qui racontent l'histoire millénaire de Fès.",
+      "explore": "Explorer",
+      "details": "Détails"
+    },
+    "cards": {
+      "medina": {
+        "title": "La Médina",
+        "description": "Plongez dans l'un des plus grands centres historiques du monde arabe. Ruelles étroites, maisons traditionnelles et vie locale animée vous y attendent.",
+        "explore": "Explorer",
+        "details": "Détails"
+      },
+      "souks": {
+        "title": "Souks & Artisans",
+        "description": "Découvrez les artisans traditionnels : tanneries, dinandiers, zellige, cuir, tissage… Chaque quartier dévoile son savoir-faire unique.",
+        "explore": "Explorer",
+        "details": "Détails"
+      },
+      "tips": {
+        "title": "Conseils Pratiques",
+        "description": "Astuces pour profiter pleinement de votre visite : horaires idéaux, comportements culturels, itinéraires recommandés et bonnes pratiques.",
+        "explore": "Explorer",
+        "details": "Détails"
+      }
+    }
+  },
+  "meetingsEvents": {
+    "hero": {
+      "title": "Meetings & Events",
+      "subtitle": "Organisez des moments inoubliables au cœur de notre riad. Des espaces exclusifs pour vos événements privés et professionnels."
+    },
+    "featured": {
+      "title": "Un Cadre d'Exception",
+      "description": "Privatisez notre riad pour créer des événements uniques dans une ambiance intime et authentique. Que ce soit sur notre rooftop, dans nos salons ou nos patios, chaque espace a été conçu pour recevoir vos convives dans un cadre élégant mêlant tradition marocaine et confort moderne.",
+      "cta1": "Demander un devis",
+      "cta2": "En savoir plus"
+    },
+    "services": {
+      "eyebrow": "Services et Commodités",
+      "items": {
+        "left": [
+          "Privatisation du riad",
+          "Dîners privés",
+          "Événements rooftop"
+        ],
+        "right": [
+          "Séminaires",
+          "Services fournis",
+          "Assistance personnalisée"
+        ]
+      }
+    },
+    "eventTypes": {
+      "eyebrow": "Types d'Événements",
+      "privatisation": {
+        "title": "Privatisation du Riad",
+        "description": "Profitez d'un accès exclusif à l'ensemble du riad pour vos célébrations, événements familiaux ou soirées privées dans un cadre raffiné.",
+        "discover": "Découvrir",
+        "details": "Détails"
+      },
+      "rooftop": {
+        "title": "Événements Rooftop",
+        "description": "Un rooftop unique offrant une vue magnifique sur la médina. Parfait pour cocktails, dîners, shootings ou célébrations en plein air.",
+        "discover": "Découvrir",
+        "details": "Détails"
+      },
+      "diners": {
+        "title": "Dîners Privés",
+        "description": "Une expérience gastronomique personnalisée dans nos salons ou terrasses, idéale pour des repas d'exception en petit comité.",
+        "discover": "Découvrir",
+        "details": "Détails"
+      }
+    },
+    "spaces": {
+      "eyebrow": "Espaces Disponibles",
+      "seminars": {
+        "title": "Séminaires & Ateliers",
+        "description": "Un espace calme et inspirant, parfait pour vos réunions, formations ou ateliers professionnels. Configuration flexible, matériel disponible et accompagnement sur demande.",
+        "discover": "Découvrir"
+      },
+      "services": {
+        "title": "Services Fournis",
+        "description": "Notre équipe propose un accompagnement complet : décoration, restauration, coordination, matériel audiovisuel et organisation sur mesure selon vos besoins.",
+        "discover": "Découvrir"
+      }
+    },
+    "groupOffer": {
+      "eyebrow": "Offre Groupe",
+      "description": "Riad Alassala, un joyau authentique au cœur de la médina de Fès, propose des espaces exceptionnels comme notre Grand Salon et nos salles de réunion privées.",
+      "discover": "Découvrir"
+    }
+  },
+  "gallery": {
+    "hero": {
+      "title": "Galerie",
+      "subtitle": "Découvrez l'atmosphère du riad à travers une sélection de photos professionnelles, vidéos immersives, et ambiances jour & nuit."
+    },
+    "photos": {
+      "eyebrow": "Photos professionnelles"
+    },
+    "videos": {
+      "eyebrow": "Vidéos"
+    },
+    "ambiance": {
+      "eyebrow": "Ambiances jour & nuit",
+      "day": {
+        "title": "Ambiance de Jour",
+        "description": "Découvrez la chaleur et la luminosité du riad aux premières heures du jour."
+      },
+      "night": {
+        "title": "Ambiance de Nuit",
+        "description": "Une atmosphère intime et élégante où lumières et détails subliment chaque espace."
+      }
     }
   },
   "pages": {
