@@ -3,16 +3,19 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import BookingWidget from './BookingWidget.jsx';
 
-export default function Hero({ title, subtitle, showBooking = false }) {
+export default function Hero({ title, subtitle, showBooking = false, backgroundImage }) {
   const { t } = useTranslation();
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 300], [0, 80]);
 
+  const defaultImage = "url('https://images.pexels.com/photos/27163975/pexels-photo-27163975.jpeg?auto=compress&cs=tinysrgb&w=1600')";
+  const imageUrl = backgroundImage ? `url('${backgroundImage}')` : defaultImage;
+
   return (
     <section className="relative h-[70vh] min-h-[420px] w-full overflow-hidden bg-neutral-900">
       <motion.div
-        style={{ y }}
-        className="absolute inset-0 bg-[url('https://images.pexels.com/photos/27163975/pexels-photo-27163975.jpeg?auto=compress&cs=tinysrgb&w=1600')] bg-cover bg-center"
+        style={{ y, backgroundImage: imageUrl }}
+        className="absolute inset-0 bg-cover bg-center"
       />
       <div className="absolute inset-0 bg-black/40" />
 

@@ -1,82 +1,70 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
+import Hero from '../components/Hero.jsx';
 import FadeIn from '../components/FadeIn.jsx';
 import SectionTitle from '../components/SectionTitle.jsx';
 
 export default function ExploringMedina() {
   const { t } = useTranslation();
-  const { scrollY } = useScroll();
-  const y = useTransform(scrollY, [0, 300], [0, 80]);
 
   return (
     <div className="min-h-screen bg-brand-cream text-neutral-900">
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative h-[60vh] min-h-[400px] w-full overflow-hidden bg-neutral-900">
-        <motion.div
-          style={{
-            y,
-            backgroundImage: "url('/images/medina/hero.jpg')"
-          }}
-          className="absolute inset-0 bg-cover bg-center"
-        />
-        <div className="absolute inset-0 bg-black/40" />
+      <Hero
+        title={t('exploringMedina.hero.title')}
+        subtitle={t('exploringMedina.hero.subtitle')}
+        backgroundImage="/images/medina/hero.jpg"
+        showBooking={false}
+      />
 
-        <div className="relative flex h-full flex-col justify-center items-center text-center">
-          <div className="container-wide">
-            <div className="max-w-2xl mx-auto space-y-3 text-white">
-              <h1 className="font-display text-4xl md:text-5xl tracking-[0.25em] uppercase">
-                {t('exploringMedina.hero.title')}
-              </h1>
-              {t('exploringMedina.hero.subtitle') && (
-                <p className="max-w-xl mx-auto text-sm md:text-base text-neutral-100/80 leading-relaxed">
-                  {t('exploringMedina.hero.subtitle')}
-                </p>
-              )}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <main className="space-y-20 pb-16">
-        {/* Featured Section (large image left, text block right) */}
-        <section className="container-wide grid gap-10 md:grid-cols-[1.2fr,1fr] md:items-center">
-          <FadeIn className="h-80 md:h-96 w-full overflow-hidden bg-neutral-300 rounded-sm shadow-sm">
-            <div
-              className="h-full w-full bg-cover bg-center"
-              style={{ backgroundImage: "url('/images/medina/featured.jpg')" }}
-            />
-          </FadeIn>
-
-          <FadeIn className="border border-neutral-200 bg-white px-7 py-8 shadow-sm">
-            <p className="text-[11px] tracking-[0.3em] uppercase text-neutral-500">
-              {t('exploringMedina.featured.eyebrow')}
-            </p>
-            <h2 className="mt-3 font-display text-2xl md:text-3xl tracking-[0.18em] uppercase">
-              {t('exploringMedina.featured.title')}
-            </h2>
-            <p className="mt-4 text-sm leading-relaxed text-neutral-600">
-              {t('exploringMedina.featured.description')}
-            </p>
-            <div className="mt-6 flex flex-wrap gap-3">
+      <main className="space-y-20 pb-16 pt-14">
+        {/* Section: Les monuments incontournables (Text Left, Image Right) */}
+        <section className="container-wide">
+          <div className="grid gap-10 md:grid-cols-[1fr,1.2fr] md:items-center">
+            <FadeIn className="space-y-6 order-2 md:order-1">
+              <h2 className="font-display text-3xl md:text-4xl tracking-[0.18em] uppercase">
+                {t('exploringMedina.monuments.title')}
+              </h2>
+              <p className="text-sm md:text-base leading-relaxed text-neutral-600">
+                {t('exploringMedina.monuments.description')}
+              </p>
               <button className="bg-brand-dark px-6 py-2 text-xs tracking-[0.24em] uppercase text-white hover:bg-neutral-800 transition-colors">
-                {t('exploringMedina.featured.explore')}
+                {t('exploringMedina.monuments.button')}
               </button>
-              <button className="border border-neutral-900 px-6 py-2 text-xs tracking-[0.24em] uppercase hover:bg-neutral-900 hover:text-white transition-colors">
-                {t('exploringMedina.featured.details')}
-              </button>
-            </div>
-          </FadeIn>
+            </FadeIn>
+
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="h-80 md:h-96 w-full overflow-hidden rounded-sm shadow-lg order-1 md:order-2"
+            >
+              <div
+                className="h-full w-full bg-cover bg-center"
+                style={{ backgroundImage: "url('/images/medina/monuments.jpg')" }}
+              />
+            </motion.div>
+          </div>
         </section>
 
-        {/* Card Grid (3 cards) */}
+        {/* 3-Card Grid Section */}
         <section className="container-wide">
           <div className="grid gap-8 md:grid-cols-3">
-            <FadeIn className="flex flex-col overflow-hidden border border-neutral-200 bg-white">
+            {/* Card 1 - La Médina */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              whileHover={{ scale: 1.05 }}
+              className="flex flex-col overflow-hidden border border-neutral-200 bg-white rounded-sm shadow-sm hover:shadow-lg transition-all duration-300"
+            >
               <div
                 className="h-48 bg-cover bg-center sm:h-56"
                 style={{ backgroundImage: "url('/images/medina/medina.jpg')" }}
@@ -88,44 +76,44 @@ export default function ExploringMedina() {
                 <p className="flex-1 text-sm leading-relaxed text-neutral-600">
                   {t('exploringMedina.cards.medina.description')}
                 </p>
-                <div className="flex flex-wrap gap-3 mt-2">
-                  <button className="text-xs tracking-[0.24em] uppercase text-neutral-900 underline underline-offset-4 hover:text-amber-700 transition-colors">
-                    {t('exploringMedina.cards.medina.explore')}
-                  </button>
-                  <button className="text-xs tracking-[0.24em] uppercase text-neutral-900 underline underline-offset-4 hover:text-amber-700 transition-colors">
-                    {t('exploringMedina.cards.medina.details')}
-                  </button>
-                </div>
               </div>
-            </FadeIn>
+            </motion.div>
 
-            <FadeIn className="flex flex-col overflow-hidden border border-neutral-200 bg-white">
+            {/* Card 2 - Souks & Artisans */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              whileHover={{ scale: 1.05 }}
+              className="flex flex-col overflow-hidden border border-neutral-200 bg-white rounded-sm shadow-sm hover:shadow-lg transition-all duration-300"
+            >
               <div
                 className="h-48 bg-cover bg-center sm:h-56"
-                style={{ backgroundImage: "url('/images/medina/souks.jpg')" }}
+                style={{ backgroundImage: "url('/images/medina/artisans.jpg')" }}
               />
               <div className="flex flex-1 flex-col gap-3 px-5 py-6">
                 <h3 className="font-display text-lg tracking-[0.16em] uppercase">
-                  {t('exploringMedina.cards.souks.title')}
+                  {t('exploringMedina.cards.artisans.title')}
                 </h3>
                 <p className="flex-1 text-sm leading-relaxed text-neutral-600">
-                  {t('exploringMedina.cards.souks.description')}
+                  {t('exploringMedina.cards.artisans.description')}
                 </p>
-                <div className="flex flex-wrap gap-3 mt-2">
-                  <button className="text-xs tracking-[0.24em] uppercase text-neutral-900 underline underline-offset-4 hover:text-amber-700 transition-colors">
-                    {t('exploringMedina.cards.souks.explore')}
-                  </button>
-                  <button className="text-xs tracking-[0.24em] uppercase text-neutral-900 underline underline-offset-4 hover:text-amber-700 transition-colors">
-                    {t('exploringMedina.cards.souks.details')}
-                  </button>
-                </div>
               </div>
-            </FadeIn>
+            </motion.div>
 
-            <FadeIn className="flex flex-col overflow-hidden border border-neutral-200 bg-white">
+            {/* Card 3 - Conseils Pratiques */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              whileHover={{ scale: 1.05 }}
+              className="flex flex-col overflow-hidden border border-neutral-200 bg-white rounded-sm shadow-sm hover:shadow-lg transition-all duration-300"
+            >
               <div
                 className="h-48 bg-cover bg-center sm:h-56"
-                style={{ backgroundImage: "url('/images/medina/conseils.jpg')" }}
+                style={{ backgroundImage: "url('/images/medina/tips.jpg')" }}
               />
               <div className="flex flex-1 flex-col gap-3 px-5 py-6">
                 <h3 className="font-display text-lg tracking-[0.16em] uppercase">
@@ -134,17 +122,60 @@ export default function ExploringMedina() {
                 <p className="flex-1 text-sm leading-relaxed text-neutral-600">
                   {t('exploringMedina.cards.tips.description')}
                 </p>
-                <div className="flex flex-wrap gap-3 mt-2">
-                  <button className="text-xs tracking-[0.24em] uppercase text-neutral-900 underline underline-offset-4 hover:text-amber-700 transition-colors">
-                    {t('exploringMedina.cards.tips.explore')}
-                  </button>
-                  <button className="text-xs tracking-[0.24em] uppercase text-neutral-900 underline underline-offset-4 hover:text-amber-700 transition-colors">
-                    {t('exploringMedina.cards.tips.details')}
-                  </button>
-                </div>
               </div>
-            </FadeIn>
+            </motion.div>
           </div>
+        </section>
+
+        {/* Section: Visite Guidée (Image Left, Text Right) */}
+        <section className="container-wide">
+          <div className="grid gap-10 md:grid-cols-[1.2fr,1fr] md:items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="h-80 md:h-96 w-full overflow-hidden rounded-sm shadow-lg"
+            >
+              <div
+                className="h-full w-full bg-cover bg-center"
+                style={{ backgroundImage: "url('/images/medina/guide.jpg')" }}
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="space-y-6"
+            >
+              <h2 className="font-display text-3xl md:text-4xl tracking-[0.18em] uppercase">
+                {t('exploringMedina.guidedTour.title')}
+              </h2>
+              <p className="text-sm md:text-base leading-relaxed text-neutral-600">
+                {t('exploringMedina.guidedTour.description')}
+              </p>
+              <button className="bg-brand-dark px-6 py-2 text-xs tracking-[0.24em] uppercase text-white hover:bg-neutral-800 transition-colors">
+                {t('exploringMedina.guidedTour.button')}
+              </button>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Final CTA Section */}
+        <section className="container-wide">
+          <FadeIn className="max-w-3xl mx-auto text-center space-y-6 py-12">
+            <h2 className="font-display text-3xl md:text-4xl tracking-[0.18em] uppercase">
+              {t('exploringMedina.cta.title')}
+            </h2>
+            <p className="text-sm md:text-base leading-relaxed text-neutral-600">
+              {t('exploringMedina.cta.subtitle')}
+            </p>
+            <button className="bg-brand-dark px-8 py-3 text-xs tracking-[0.24em] uppercase text-white hover:bg-neutral-800 transition-colors">
+              {t('exploringMedina.cta.button')}
+            </button>
+          </FadeIn>
         </section>
       </main>
 
