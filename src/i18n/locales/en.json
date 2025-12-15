@@ -4,11 +4,13 @@
     "tagline": "BEYOND AND ABOVE",
     "checkRates": "BOOK",
     "home": "HOME",
+    "about": "ABOUT",
     "accommodation": "ACCOMMODATION",
     "dining": "DINING",
     "exploringMedina": "EXPLORING MEDINA",
     "meetingsEvents": "MEETINGS & EVENTS",
     "experiences": "EXPERIENCES",
+    "offers": "OFFERS",
     "gallery": "GALLERY"
   },
   "footer": {
@@ -124,6 +126,25 @@
       "title": "Rooms & Suites",
       "subtitle": "Each room is designed to offer a peaceful retreat featuring comfort, character, and traditional elegance.",
       "viewAllRooms": "View All Rooms"
+    }
+  },
+
+  "about": {
+    "hero": {
+      "title": "About Riad Alassala",
+      "subtitle": "A gracious riad residence in the heart of Fes medina, designed as a welcoming family home."
+    },
+    "essence": {
+      "title": "Essence of the place",
+      "text": "Grand and graceful, Riad Alassala is a peaceful sanctuary in the heart of the medina of Fes. Behind its historic walls, the bustle of the old city fades to reveal an atmosphere of serenity, elegance and quiet refinement. The riad invites you to slow down, watch the light move across the patios and reconnect with a deeply Moroccan way of life."
+    },
+    "history": {
+      "title": "History & identity",
+      "text": "Housed in a 19th‑century residence, Riad Alassala has been restored with great respect to preserve its original soul. Traditional architecture, fountains, zellige tiles and generous volumes all bear witness to the craftsmanship of Fassi artisans. This heritage is now harmonised with contemporary comfort, creating an elegant house imagined as a noble family residence rather than a simple place to stay."
+    },
+    "philosophy": {
+      "title": "Philosophy & welcome",
+      "text": "At Riad Alassala, hospitality is built on attention, discretion and sincerity. Every stay is guided by personalised service, attentive to details and to each guest’s preferences. Whether for a journey of discovery or a moment of rest, the riad offers an intimate and inspiring setting where you are welcomed with warmth and leave with the desire to return."
     }
   },
 
@@ -440,6 +461,34 @@
     "contact": {
       "title": "Would you like to book an experience or customize your trip?",
       "button": "Contact Us"
+    }
+  },
+
+  "offers": {
+    "hero": {
+      "title": "Special Offers",
+      "subtitle": "Privileged conditions for your stay in Fes"
+    },
+    "intro": {
+      "text": "At Riad Alassala, every stay is a carefully considered experience. Our special offers are designed to let you enjoy privileged conditions while preserving the essence of our hospitality: authenticity, comfort and serenity in the heart of the medina of Fes. Whether you plan your trip in advance, extend your stay or travel with the seasons, discover benefits tailored to your own rhythm."
+    },
+    "earlyBooking": {
+      "eyebrow": "Special Offer",
+      "title": "Early Booking",
+      "description": "Book your stay in advance and enjoy preferential conditions. The ideal way to plan your escape to Fes with complete peace of mind.",
+      "cta": "Book"
+    },
+    "longStay": {
+      "eyebrow": "Extended Stays",
+      "title": "Long Stay",
+      "description": "Enjoy exclusive advantages for longer stays. Live the medina at your own pace and discover Fes like a resident.",
+      "cta": "Discover"
+    },
+    "seasonal": {
+      "eyebrow": "Seasonal Offers",
+      "title": "Seasonal Offers",
+      "description": "Occasional offers throughout the seasons and events. An invitation to experience the riad differently, all year long.",
+      "cta": "Book"
     }
   },
 

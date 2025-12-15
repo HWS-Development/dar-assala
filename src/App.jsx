@@ -7,16 +7,20 @@ import ExploringMedina from './pages/ExploringMedina.jsx';
 import MeetingsEvents from './pages/MeetingsEvents.jsx';
 import Experiences from './pages/Experiences.jsx';
 import Gallery from './pages/Gallery.jsx';
+import Offers from './pages/Offers.jsx';
+import About from './pages/About.jsx';
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Overview />} />
+      <Route path="/about" element={<About />} />
       <Route path="/accommodation" element={<Accommodation />} />
       <Route path="/dining" element={<Dining />} />
       <Route path="/exploring-medina" element={<ExploringMedina />} />
       <Route path="/meetings-events" element={<MeetingsEvents />} />
       <Route path="/experiences" element={<Experiences />} />
+      <Route path="/offers" element={<Offers />} />
       <Route path="/gallery" element={<Gallery />} />
     </Routes>
   );

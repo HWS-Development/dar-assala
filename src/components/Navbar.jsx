@@ -1,42 +1,45 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Logo from './Logo.jsx';
 
 const navItems = [
   { key: 'home', to: '/' },
+  { key: 'about', to: '/about' },
   { key: 'accommodation', to: '/accommodation' },
   { key: 'dining', to: '/dining' },
   { key: 'exploringMedina', to: '/exploring-medina' },
   { key: 'meetingsEvents', to: '/meetings-events' },
   { key: 'experiences', to: '/experiences' },
+  { key: 'offers', to: '/offers' },
   { key: 'gallery', to: '/gallery' }
 ];
 
 export default function Navbar() {
   const { t, i18n } = useTranslation();
   const [open, setOpen] = useState(false);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    setVisible(true);
+  }, []);
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
 
   return (
-    <header className="sticky top-0 z-40 border-b border-neutral-200 bg-brand-cream/95 backdrop-blur">
-      <div className="container-wide flex items-center justify-between py-4 md:py-6 lg:py-8 relative">
-        <div className="flex items-center gap-4 z-10">
-          <button
-            onClick={() => changeLanguage(i18n.language === 'en' ? 'fr' : 'en')}
-            className="text-xs tracking-[0.2em] uppercase hover:text-neutral-900"
-          >
-            <span className={i18n.language === 'en' ? 'text-neutral-900' : 'text-neutral-400'}>
-              EN
-            </span>{' '}
-            <span className="mx-1 text-neutral-400">|</span>{' '}
-            <span className={i18n.language === 'fr' ? 'text-neutral-900' : 'text-neutral-400'}>
-              FR
-            </span>
-          </button>
+    <header
+      className={`sticky top-0 z-40 border-b border-neutral-200 bg-white transition-opacity duration-500 ${
+        visible ? 'opacity-100' : 'opacity-0'
+      }`}
+    >
+      {/* Main header band */}
+      <div className="container-wide flex items-center justify-between py-4 md:py-6 lg:py-7">
+        {/* Left: Logo + burger (mobile) */}
+        <div className="flex items-center gap-3 md:gap-5">
+          <Logo />
+
           <button
             className="inline-flex h-8 w-8 items-center justify-center border border-neutral-300 md:hidden"
             onClick={() => setOpen((v) => !v)}
@@ -47,29 +50,51 @@ export default function Navbar() {
           </button>
         </div>
 
-        <div className="absolute left-1/2 -translate-x-1/2 w-full flex flex-col items-center">
-          <Logo />
-          <div className="w-full max-w-4xl border-t border-neutral-200 mt-3 md:mt-4" />
+        {/* Center: Brand signature text */}
+        <div className="hidden md:flex flex-1 justify-center pointer-events-none">
+          <span className="font-serif text-sm md:text-base tracking-[0.4em] uppercase text-neutral-800">
+            {t('navbar.tagline')}
+          </span>
         </div>
 
-        <div className="flex-1" />
+        {/* Right: Book button + separate language switcher */}
+        <div className="hidden md:flex items-center gap-4">
+          <button className="inline-flex items-center rounded-none border border-neutral-900 bg-neutral-900 px-6 py-2 text-xs tracking-[0.24em] uppercase text-white">
+            {t('navbar.checkRates')}
+          </button>
+          <button
+            onClick={() => changeLanguage(i18n.language === 'en' ? 'fr' : 'en')}
+            className="text-[11px] tracking-[0.25em] uppercase text-neutral-700 hover:text-neutral-900 flex items-center gap-1"
+          >
+            <span className={i18n.language === 'en' ? 'text-neutral-900' : 'text-neutral-400'}>
+              EN
+            </span>
+            <span className="text-neutral-400">·</span>
+            <span className={i18n.language === 'fr' ? 'text-neutral-900' : 'text-neutral-400'}>
+              FR
+            </span>
+          </button>
+        </div>
 
-        <button className="hidden text-xs tracking-[0.22em] uppercase md:inline-flex bg-brand-dark text-white px-6 py-2 z-10">
-          {t('navbar.checkRates')}
-        </button>
+        {/* Fallback for mobile: keep space so center text alignment is not broken */}
+        <div className="md:hidden" />
       </div>
 
-      <nav className="border-t border-neutral-200 relative z-20">
+      {/* Navigation band */}
+      <nav className="border-t border-neutral-200 bg-white relative z-20">
         <div className="container-wide">
-          <div className="hidden items-center justify-center gap-10 py-3 text-[11px] tracking-[0.28em] uppercase md:flex">
+          {/* Desktop nav */}
+          <div className="hidden items-center justify-center gap-10 py-3 text-xs md:text-sm tracking-[0.32em] uppercase md:flex">
             {navItems.map((item) => (
               <NavLink
                 key={item.to}
                 to={item.to}
                 end={item.to === '/'}
                 className={({ isActive }) =>
-                  `pb-1 hover:text-neutral-900 cursor-pointer transition-colors relative z-10 ${
-                    isActive ? 'border-b border-neutral-900 text-neutral-900' : 'text-neutral-500'
+                  `pb-1 cursor-pointer transition-colors duration-300 relative ${
+                    isActive
+                      ? 'border-b border-neutral-900 text-neutral-900 hover:text-amber-700'
+                      : 'text-neutral-500 hover:text-amber-700'
                   }`
                 }
               >
@@ -78,8 +103,9 @@ export default function Navbar() {
             ))}
           </div>
 
+          {/* Mobile nav */}
           {open && (
-            <div className="flex flex-col gap-2 py-3 text-[11px] tracking-[0.28em] uppercase md:hidden">
+            <div className="flex flex-col gap-2 py-3 text-xs tracking-[0.28em] uppercase md:hidden bg-white">
               {navItems.map((item) => (
                 <NavLink
                   key={item.to}

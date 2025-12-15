@@ -4,11 +4,13 @@
     "tagline": "BEYOND AND ABOVE",
     "checkRates": "RÉSERVER",
     "home": "ACCUEIL",
+    "about": "MAISON",
     "accommodation": "HÉBERGEMENT",
     "dining": "RESTAURATION",
     "exploringMedina": "EXPLORER LA MÉDINA",
     "meetingsEvents": "RÉUNIONS & ÉVÉNEMENTS",
     "experiences": "EXPÉRIENCES",
+    "offers": "OFFRES",
     "gallery": "GALERIE"
   },
 
@@ -126,6 +128,25 @@
       "title": "Chambres & Suites",
       "subtitle": "Des chambres conçues pour offrir calme, confort et élégance traditionnelle.",
       "viewAllRooms": "Voir toutes les chambres"
+    }
+  },
+
+  "about": {
+    "hero": {
+      "title": "À propos de Riad Alassala",
+      "subtitle": "Un riad grand et gracieux, pensé comme une maison familiale au cœur de la médina de Fès."
+    },
+    "essence": {
+      "title": "Essence du lieu",
+      "text": "Grand et gracieux, Riad Alassala est un sanctuaire paisible au cœur de la médina de Fès. Derrière ses murs historiques, l’agitation de la ville ancienne s’estompe pour laisser place à une atmosphère de sérénité, d’élégance et de raffinement discret. Le riad invite à ralentir, à observer la lumière jouer sur les patios et à renouer avec un art de vivre profondément marocain."
+    },
+    "history": {
+      "title": "Histoire & identité",
+      "text": "Installé dans une demeure du XIXᵉ siècle, Riad Alassala a été restauré avec respect pour préserver son âme originelle. L’architecture traditionnelle, les fontaines, les zelliges et les volumes généreux témoignent du savoir-faire des artisans fassis. Cette richesse patrimoniale s’harmonise aujourd’hui avec un confort contemporain, donnant naissance à une maison élégante, pensée comme une résidence familiale noble plutôt qu’un simple lieu de passage."
+    },
+    "philosophy": {
+      "title": "Philosophie & accueil",
+      "text": "À Riad Alassala, l’hospitalité repose sur l’attention, la discrétion et la sincérité. Chaque séjour est guidé par un service personnalisé, attentif aux détails et aux préférences de chaque hôte. Qu’il s’agisse d’un voyage de découverte ou d’un moment de repos, le riad offre un cadre intime et inspirant, où l’on se sent accueilli avec chaleur et où l’on repart avec l’envie de revenir."
     }
   },
 
@@ -442,6 +463,34 @@
     "contact": {
       "title": "Souhaitez-vous réserver une expérience ou personnaliser votre voyage ?",
       "button": "Contactez-nous"
+    }
+  },
+
+  "offers": {
+    "hero": {
+      "title": "Offres spéciales",
+      "subtitle": "Des conditions privilégiées pour votre séjour à Fès"
+    },
+    "intro": {
+      "text": "À Riad Alassala, chaque séjour est une expérience pensée avec soin. Nos offres spéciales ont été conçues pour vous permettre de profiter de conditions privilégiées, tout en conservant l’essence de notre hospitalité : authenticité, confort et sérénité au cœur de la médina de Fès. Que vous planifiez votre voyage à l’avance, que vous prolongiez votre séjour ou que vous voyagiez selon les saisons, découvrez des avantages adaptés à votre rythme."
+    },
+    "earlyBooking": {
+      "eyebrow": "Offre spéciale",
+      "title": "Early Booking",
+      "description": "Réservez votre séjour à l’avance et bénéficiez de conditions avantageuses. Une manière idéale de préparer votre escapade à Fès en toute sérénité.",
+      "cta": "Réserver"
+    },
+    "longStay": {
+      "eyebrow": "Séjours prolongés",
+      "title": "Long Stay",
+      "description": "Profitez d’avantages exclusifs pour les séjours prolongés. Vivez la médina à votre rythme et découvrez Fès comme un résident.",
+      "cta": "Découvrir"
+    },
+    "seasonal": {
+      "eyebrow": "Offres saisonnières",
+      "title": "Offres saisonnières",
+      "description": "Des offres ponctuelles selon les saisons et événements. Une invitation à vivre le riad autrement, toute l’année.",
+      "cta": "Réserver"
     }
   },
 

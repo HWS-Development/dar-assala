@@ -34,7 +34,7 @@ export default function BookingWidget() {
             type="submit"
             className="w-full bg-brand-dark px-4 py-3 text-[11px] tracking-[0.28em] uppercase text-white"
           >
-            {t('booking.checkRates')}
+            {t('booking')}
           </button>
         </div>
       </form>
