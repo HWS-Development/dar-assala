@@ -11,7 +11,8 @@ export default function Experiences() {
   const { t } = useTranslation();
   const [openFaq, setOpenFaq] = useState(null);
 
-  const experiences = [
+  // All experiences data
+  const allExperiences = [
     {
       key: 'medinaTour',
       images: ['medina-tour/1.jpg', 'medina-tour/2.jpg', 'medina-tour/3.jpg'],
@@ -46,8 +47,38 @@ export default function Experiences() {
       key: 'chefchaouenTrekking',
       images: ['chefchaouen-trekking/1.jpg', 'chefchaouen-trekking/2.jpg', 'chefchaouen-trekking/3.jpg'],
       includes: t('experiences.experiences.chefchaouenTrekking.includes', { returnObjects: true })
+    },
+    // New Culinary Experiences
+    {
+      key: 'tasteOfFes',
+      images: ['cooking-class/1.jpg', 'cooking-class/2.jpg', 'cooking-class/3.jpg'],
+      includes: t('experiences.experiences.tasteOfFes.includes', { returnObjects: true })
+    },
+    {
+      key: 'moroccanTeaChallenge',
+      images: ['cooking-class/1.jpg', 'cooking-class/2.jpg', 'cooking-class/3.jpg'],
+      includes: t('experiences.experiences.moroccanTeaChallenge.includes', { returnObjects: true })
+    },
+    {
+      key: 'artOfMoroccanPastry',
+      images: ['cooking-class/1.jpg', 'cooking-class/2.jpg', 'cooking-class/3.jpg'],
+      includes: t('experiences.experiences.artOfMoroccanPastry.includes', { returnObjects: true })
+    },
+    // Artisan Workshops (Combined)
+    {
+      key: 'artisanWorkshops',
+      images: ['cooking-class/1.jpg', 'cooking-class/2.jpg', 'cooking-class/3.jpg'],
+      includes: t('experiences.experiences.artisanWorkshops.includes', { returnObjects: true })
     }
   ];
+
+  // Section 1: Excursions & Trips
+  const excursionKeys = ['medinaTour', 'chefchaouen', 'meknesVolubilis', 'desertMerzouga', 'middleAtlas', 'chefchaouenTrekking'];
+  const excursions = allExperiences.filter(exp => excursionKeys.includes(exp.key));
+
+  // Section 2: Artisan & Culinary Experiences
+  const workshopKeys = ['cookingClass', 'tasteOfFes', 'moroccanTeaChallenge', 'artOfMoroccanPastry', 'artisanWorkshops'];
+  const workshops = allExperiences.filter(exp => workshopKeys.includes(exp.key));
 
   const faqItems = t('experiences.faq.items', { returnObjects: true });
 
@@ -73,18 +104,47 @@ export default function Experiences() {
           </FadeIn>
         </section>
 
-        {/* Experiences Cards Grid */}
+        {/* SECTION 1: Excursions & Trips */}
         <section className="container-wide">
           <FadeIn>
-            <div className="text-center mb-12">
-              <h2 className="font-display text-3xl md:text-4xl tracking-[0.18em] uppercase">
-                {t('experiences.hero.title')}
-              </h2>
-            </div>
+            <SectionTitle
+              eyebrow={t('experiences.sections.excursions.eyebrow')}
+              title={t('experiences.sections.excursions.title')}
+              subtitle={t('experiences.sections.excursions.subtitle')}
+              align="center"
+            />
           </FadeIn>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mt-12">
-            {experiences.map((exp) => {
+            {excursions.map((exp) => {
+              const expData = t(`experiences.experiences.${exp.key}`, { returnObjects: true });
+              return (
+                <ExperienceCard
+                  key={exp.key}
+                  title={expData.title}
+                  description={expData.description}
+                  price={expData.price || null}
+                  images={exp.images}
+                  includes={exp.includes}
+                />
+              );
+            })}
+          </div>
+        </section>
+
+        {/* SECTION 2: Artisan & Culinary Experiences */}
+        <section className="container-wide">
+          <FadeIn>
+            <SectionTitle
+              eyebrow={t('experiences.sections.workshops.eyebrow')}
+              title={t('experiences.sections.workshops.title')}
+              subtitle={t('experiences.sections.workshops.subtitle')}
+              align="center"
+            />
+          </FadeIn>
+
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mt-12">
+            {workshops.map((exp) => {
               const expData = t(`experiences.experiences.${exp.key}`, { returnObjects: true });
               return (
                 <ExperienceCard

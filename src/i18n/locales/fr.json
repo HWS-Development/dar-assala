@@ -236,11 +236,40 @@
   "dining": {
     "hero": {
       "title": "Restauration",
-      "subtitle": "Découvrez une cuisine marocaine authentique préparée avec soin et produits frais."
+      "subtitle": "Une cuisine marocaine authentique dans un cadre élégant, de la fontaine du patio au rooftop avec vues panoramiques."
+    },
+    "intro": {
+      "eyebrow": "RESTAURATION / RESTAURANT & ROOFTOP",
+      "title": "Restauration",
+      "subtitle": "Une cuisine marocaine authentique dans un cadre élégant, de la fontaine du patio au rooftop avec vues panoramiques."
+    },
+    "sections": {
+      "ourCuisine": {
+        "title": "Notre Cuisine",
+        "text": "Au Riad Alassala Fès, chaque repas est une célébration de la cuisine marocaine authentique. L'héritage fassi, les saveurs locales et une atmosphère raffinée se conjuguent pour créer une expérience inoubliable, sous les ciels étoilés de Fès ou près de la douce fontaine."
+      },
+      "leVerdoyant": {
+        "title": "Le Verdoyant",
+        "subheading": "Saveurs Authentiques et Raffinées",
+        "text": "Le menu du Verdoyant célèbre l'excellence de la cuisine marocaine. Chaque plat, confectionné avec des ingrédients frais, de saison et d'origine locale, réinterprète avec créativité les recettes fassies traditionnelles. Les saveurs s'entremêlent, les textures surprennent et les couleurs enchantent, offrant un véritable voyage culinaire où authenticité et modernité se rencontrent à chaque bouchée."
+      },
+      "fountain": {
+        "title": "La Fontaine, Cœur de l'Expérience",
+        "text": "Au cœur du patio du riad, la fontaine centrale du Verdoyant accompagne doucement chaque repas de son murmure apaisant. Entourée d'une végétation luxuriante et de détails artisanaux marocains, elle transforme le patio en un sanctuaire intime et serein. Chaque table devient un refuge où les hôtes peuvent pleinement savourer la richesse des plats dans un cadre intemporel et élégant."
+      },
+      "rooftop": {
+        "title": "Expérience Rooftop",
+        "subheading": "Vues à Couper le Souffle",
+        "text": "Perché au sommet du Riad Alassala Fès, le rooftop offre des vues panoramiques sur la ville ancienne et les montagnes de l'Atlas. À La Table Panoramique et Fez From Above, chaque repas devient un voyage : cuisine marocaine authentique confectionnée avec des ingrédients frais et de saison, cocktails signature, thé marocain et délices locaux, le tout dans une ambiance rooftop raffinée où gastronomie et panorama s'harmonisent."
+      },
+      "breakfast": {
+        "title": "Petit-déjeuner — Un Matin au Cœur de Fès",
+        "text": "Chaque matin, votre séjour inclut un petit-déjeuner servi à table dans le cadre de notre offre B&B. Savourez-le dans le patio, près de la fontaine, baigné d'une lumière douce. Pains et pâtisseries frais, msemmen feuilletés, crêpes marocaines, confitures et miel artisanaux, fruits de saison, jus fraîchement pressés, et thés et cafés aromatiques infusés d'épices locales. Un moment chaleureux et sensoriel où tradition et confort se rencontrent."
+      }
     },
     "presentation": {
       "title": "Présentation du Restaurant",
-      "description": "Notre cuisine propose des plats marocains traditionnels préparés chaque jour avec des produits de saison. Des repas faits maison, dans l’esprit chaleureux des maisons familiales de Fès."
+      "description": "Notre cuisine propose des plats marocains traditionnels préparés chaque jour avec des produits de saison. Des repas faits maison, dans l'esprit chaleureux des maisons familiales de Fès."
     },
     "concept": {
       "title": "Philosophie Culinaire",
@@ -255,7 +284,7 @@
       "description": "Commencez votre journée avec un petit-déjeuner maison : pain frais, pâtisseries, fruits de saison, spécialités marocaines et boissons chaudes."
     },
     "menu": {
-      "title": "Menu",
+      "title": "Menu (PDF)",
       "description": "Découvrez nos plats faits maison inspirés de la tradition marocaine et préparés quotidiennement.",
       "downloadButton": "Télécharger le menu"
     }
@@ -396,6 +425,18 @@
     "intro": {
       "text": "Des visites guidées de la médina aux excursions d'une journée et aux aventures de plusieurs jours à travers le Maroc, Riad Alassala propose des expériences authentiques, sûres et mémorables adaptées à nos invités. Tous les voyages sont organisés avec des partenaires locaux de confiance et des guides certifiés."
     },
+    "sections": {
+      "excursions": {
+        "eyebrow": "EXCURSIONS",
+        "title": "Voyages au-delà de la Médina",
+        "subtitle": "Découvrez le Maroc à travers des excursions guidées, des sites culturels et des paysages naturels."
+      },
+      "workshops": {
+        "eyebrow": "EXPÉRIENCES LOCALES",
+        "title": "Expériences Artisanales & Culinaires",
+        "subtitle": "Des expériences pratiques qui vous connectent avec l'artisanat et les saveurs de Fès."
+      }
+    },
     "priceOnRequest": "Prix sur demande",
     "includes": "Inclus",
     "cta": "Détails",
@@ -441,6 +482,30 @@
         "price": null,
         "description": "Une belle route de randonnée combinant des paysages de montagne avec le charme de Chefchaouen.",
         "includes": ["Randonnée", "Guide", "Repas", "Hébergements"]
+      },
+      "tasteOfFes": {
+        "title": "Cours de Cuisine – Découvrez le Patrimoine Culinaire Marocain",
+        "price": "450 MAD par personne",
+        "description": "Le Goût de Fès — Plongez-vous dans les saveurs riches de la cuisine marocaine avec un cours pratique de 3 heures. Commencez votre voyage au marché local, en sélectionnant des ingrédients frais avec votre hôte tout en apprenant quelques phrases en arabe en cours de route. De retour au riad, apprenez les secrets des épices, techniques et saveurs marocaines en préparant un plat fassi authentique. Une expérience culinaire unique à chérir pour toujours. Menu d'exemple : Salades marocaines, Pastilla & Briouates, Tagines, Couscous",
+        "includes": ["Eau en bouteille", "Déjeuner", "Thé ou Café"]
+      },
+      "moroccanTeaChallenge": {
+        "title": "Défi du Thé Marocain",
+        "price": "150 MAD par personne",
+        "description": "Plongez dans l'univers du thé marocain avec nos conseils d'experts. Maîtrisez l'art de préparer la théière parfaite et savourez-la accompagnée d'une sélection d'exquises pâtisseries marocaines faites maison.",
+        "includes": ["Eau en bouteille", "Thé ou Café", "Sélection de douceurs marocaines"]
+      },
+      "artOfMoroccanPastry": {
+        "title": "L'Art de la Pâtisserie Marocaine",
+        "price": "300 MAD par personne",
+        "description": "Découvrez les secrets de la pâtisserie marocaine lors d'un atelier d'une demi-journée avec notre pâtissier passionné. Apprenez à confectionner des Briouates, Kaab Ghzal, Ghriba et autres délices traditionnels tout en explorant l'art et la culture derrière chaque création.",
+        "includes": ["Eau en bouteille", "Thé ou Café", "Sélection de douceurs marocaines"]
+      },
+      "artisanWorkshops": {
+        "title": "Ateliers Artisanaux – L'Âme de Fès entre Vos Mains",
+        "price": null,
+        "description": "Entrez dans le cœur de Fès et découvrez l'artisanat intemporel de la ville. Guidé par des maîtres artisans, chaque atelier vous invite à vous connecter avec des siècles de patrimoine marocain, en explorant des techniques transmises de génération en génération : Zellige & Art de la Céramique – concevez et créez votre propre mosaïque, une miniature de Fès à chérir. Poterie & Céramique – façonnez, peignez et donnez vie à l'argile en utilisant des méthodes fassies authentiques. Calligraphie – dansez avec l'élégance de l'écriture arabe, capturant la poésie du mot écrit. Chaque expérience est plus qu'un atelier — c'est un voyage pour les sens, une connexion intime avec l'artisanat, et un souvenir qui incarne l'essence de Fès.",
+        "includes": ["Session d'atelier", "Matériaux", "Création à emporter"]
       }
     },
     "faq": {

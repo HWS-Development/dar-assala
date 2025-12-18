@@ -234,11 +234,40 @@
   "dining": {
     "hero": {
       "title": "Dining",
-      "subtitle": "Experience authentic Moroccan home cooking prepared with care and fresh local ingredients."
+      "subtitle": "Authentic Moroccan cuisine in an elegant setting, from the patio fountain to the rooftop with panoramic views."
+    },
+    "intro": {
+      "eyebrow": "DINING / RESTAURANT & ROOFTOP",
+      "title": "Dining",
+      "subtitle": "Authentic Moroccan cuisine in an elegant setting, from the patio fountain to the rooftop with panoramic views."
+    },
+    "sections": {
+      "ourCuisine": {
+        "title": "Our Cuisine",
+        "text": "At Riad Alassala Fes, every meal is a celebration of authentic Moroccan cuisine. Fassi heritage, local flavors, and a refined atmosphere come together to create an unforgettable experience, under the starry skies of Fes or by the gentle Tinkling Fountain."
+      },
+      "leVerdoyant": {
+        "title": "Le Verdoyant",
+        "subheading": "Authentic and Refined Flavors",
+        "text": "The menu at Le Verdoyant celebrates the excellence of Moroccan cuisine. Every dish, crafted with fresh, seasonal, locally sourced ingredients, creatively reinterprets traditional Fassi recipes. Flavors intertwine, textures surprise, and colors delight, offering a true culinary journey where authenticity and modernity meet in every bite."
+      },
+      "fountain": {
+        "title": "The Fountain, Heart of the Experience",
+        "text": "At the heart of the riad's patio, the central fountain of Le Verdoyant gently accompanies each meal with its soothing murmur. Surrounded by lush greenery and Moroccan artisanal details, it transforms the patio into an intimate and serene sanctuary. Every table becomes a refuge where guests can fully savor the richness of the dishes in a timeless, elegant setting."
+      },
+      "rooftop": {
+        "title": "Rooftop Experience",
+        "subheading": "Breathtaking Views",
+        "text": "Perched atop Riad Alassala Fes, the rooftop offers panoramic vistas over the ancient city and the Atlas Mountains. At La Table Panoramique and Fez From Above, each meal becomes a journey: authentic Moroccan cuisine crafted with fresh, seasonal ingredients, signature cocktails, Moroccan tea and local delicacies, all in a refined rooftop ambiance where gastronomy and the panorama harmonize."
+      },
+      "breakfast": {
+        "title": "Breakfast — A Morning in the Heart of Fes",
+        "text": "Each morning, your stay includes a table-served breakfast as part of our B&B offering. Enjoy it in the patio, by the fountain, bathed in soft light. Fresh breads and pastries, flaky msemmen, Moroccan pancakes, artisanal jams and honey, seasonal fruits, freshly pressed juices, and aromatic teas and coffees infused with local spices. A warm, sensory moment where tradition and comfort meet."
+      }
     },
     "presentation": {
-      "title": "Restaurant Presentation",
-      "description": "Our kitchen offers traditional Moroccan dishes prepared daily with seasonal produce. Meals are cooked with the warmth of a family home, reflecting the rich flavors and culinary traditions of Fes."
+      "title": "Our Cuisine",
+      "description": "At Riad Alassala Fes, every meal is a celebration of authentic Moroccan cuisine. Fassi heritage, local flavors, and a refined atmosphere come together to create an unforgettableexperience, under the starry skies of Fes or by the gentle Tinkling Fountain."
     },
     "concept": {
       "title": "Culinary Philosophy",
@@ -253,7 +282,7 @@
       "description": "Start your day with a homemade breakfast including fresh bread, pastries, seasonal fruit, Moroccan specialties and hot drinks prepared to order."
     },
     "menu": {
-      "title": "Menu",
+      "title": "Menu (PDF)",
       "description": "Discover our homemade dishes inspired by Moroccan tradition and prepared daily with fresh produce.",
       "downloadButton": "Download Menu"
     }
@@ -394,6 +423,18 @@
     "intro": {
       "text": "From guided medina tours to full-day excursions and multi-day adventures across Morocco, Riad Alassala offers authentic, safe and memorable experiences tailored for our guests. All trips are operated with trusted local partners and certified guides."
     },
+    "sections": {
+      "excursions": {
+        "eyebrow": "EXCURSIONS",
+        "title": "Journeys Beyond the Medina",
+        "subtitle": "Discover Morocco through guided excursions, cultural landmarks and natural landscapes."
+      },
+      "workshops": {
+        "eyebrow": "LOCAL EXPERIENCES",
+        "title": "Artisan & Culinary Experiences",
+        "subtitle": "Hands-on experiences connecting you with the crafts and flavors of Fes."
+      }
+    },
     "priceOnRequest": "Price on request",
     "includes": "Includes",
     "cta": "Details",
@@ -439,6 +480,30 @@
         "price": null,
         "description": "A beautiful trekking route combining mountain landscapes with the charm of Chefchaouen.",
         "includes": ["Trekking", "Guide", "Meals", "Accommodations"]
+      },
+      "tasteOfFes": {
+        "title": "Cooking Classes – Discover Moroccan Culinary Heritage",
+        "price": "450 MAD per person",
+        "description": "The Taste of Fes — Immerse yourself in the rich flavors of Moroccan cuisine with a hands-on 3-hour masterclass. Begin your journey at the local street market, selecting fresh ingredients with your host while picking up a few Arabic phrases along the way. Back at the riad, learn the secrets of Moroccan spices, techniques, and flavors as you prepare an authentic Fassi dish. A unique culinary experience to treasure forever. Sample Menu: Moroccan salads, Pastilla & Briouates, Tagines, Couscous",
+        "includes": ["Bottled water", "Lunch", "Tea or Coffee"]
+      },
+      "moroccanTeaChallenge": {
+        "title": "Moroccan Tea Challenge",
+        "price": "150 MAD per person",
+        "description": "Dive into the world of Moroccan tea with our expert guidance. Master the art of brewing the perfect pot and savor it alongside a selection of exquisite homemade Moroccan sweets.",
+        "includes": ["Bottled water", "Tea or Coffee", "Moroccan sweet selection"]
+      },
+      "artOfMoroccanPastry": {
+        "title": "The Art of Moroccan Pastry",
+        "price": "300 MAD per person",
+        "description": "Discover the secrets of Moroccan pastries in a half-day workshop with our passionate pastry chef. Learn to craft Briouates, Kaab Ghzal, Ghriba, and other traditional delights while exploring the artistry and culture behind each creation.",
+        "includes": ["Bottled water", "Tea or Coffee", "Moroccan sweet selection"]
+      },
+      "artisanWorkshops": {
+        "title": "Artisan Workshops – The Soul of Fes in Your Hands",
+        "price": null,
+        "description": "Step into the heart of Fes and discover the city's timeless crafts. Guided by master artisans, each workshop invites you to connect with centuries of Moroccan heritage, exploring techniques that have been passed down through generations: Zellige & Tile Art – design and craft your own mosaic, a miniature piece of Fes to treasure. Pottery & Ceramics – shape, paint, and breathe life into clay using authentic Fassi methods. Calligraphy – dance with the elegance of Arabic script, capturing the poetry of the written word. Every experience is more than a workshop — it's a journey for the senses, an intimate connection to craftsmanship, and a keepsake that embodies the essence of Fes.",
+        "includes": ["Workshop session", "Materials", "Take-home creation"]
       }
     },
     "faq": {

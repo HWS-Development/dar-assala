@@ -3,143 +3,178 @@ import { useTranslation } from 'react-i18next';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
+import Hero from '../components/Hero.jsx';
 import FadeIn from '../components/FadeIn.jsx';
 import SectionTitle from '../components/SectionTitle.jsx';
 
 export default function Dining() {
   const { t } = useTranslation();
   const { scrollY } = useScroll();
-  const y = useTransform(scrollY, [0, 300], [0, 80]);
+
+  // Image paths array for easy swapping
+  const diningImages = [
+    '/images/dining/1.jpg',
+    '/images/dining/2.jpg',
+    '/images/dining/3.jpg',
+    '/images/dining/4.jpg'
+  ];
+
+  // Parallax transform for images
+  const imageY1 = useTransform(scrollY, [0, 500], [0, 50]);
+  const imageY2 = useTransform(scrollY, [0, 500], [0, 50]);
+  const imageY3 = useTransform(scrollY, [0, 500], [0, 50]);
+  const imageY4 = useTransform(scrollY, [0, 500], [0, 50]);
+  const imageY5 = useTransform(scrollY, [0, 500], [0, 50]);
 
   return (
     <div className="min-h-screen bg-brand-cream text-neutral-900">
       <Navbar />
 
-      {/* A. Hero Section */}
-      <section className="relative h-[60vh] min-h-[400px] w-full overflow-hidden bg-neutral-900">
-        <motion.div
-          style={{
-            y,
-            backgroundImage: "url('/images/dining/Screenshot 2025-12-06 213636.png')"
-          }}
-          className="absolute inset-0 bg-cover bg-center"
-        />
-        <div className="absolute inset-0 bg-black/40" />
+      <Hero
+        title={t('dining.hero.title')}
+        subtitle={t('dining.hero.subtitle')}
+        showBooking={false}
+        backgroundImage={diningImages[0]}
+      />
 
-        <div className="relative flex h-full flex-col justify-center items-center text-center">
-          <div className="container-wide">
-            <div className="max-w-2xl mx-auto space-y-3 text-white">
-              <h1 className="font-display text-4xl md:text-5xl tracking-[0.25em] uppercase">
-                {t('dining.hero.title')}
-              </h1>
-              {t('dining.hero.subtitle') && (
-                <p className="max-w-xl mx-auto text-sm md:text-base text-neutral-100/80 leading-relaxed">
-                  {t('dining.hero.subtitle')}
-                </p>
-              )}
-            </div>
-          </div>
-        </div>
-      </section>
+      <main className="pb-20">
+        {/* Intro Section */}
+        <section className="container-wide py-14 md:py-20">
+          <FadeIn className="max-w-3xl mx-auto text-center space-y-4">
+            <p className="text-[11px] tracking-[0.3em] uppercase text-neutral-500">
+              {t('dining.intro.eyebrow')}
+            </p>
+            <h2 className="font-display text-4xl md:text-5xl tracking-[0.18em] uppercase text-neutral-900">
+              {t('dining.intro.title')}
+            </h2>
+            <p className="text-sm md:text-base leading-relaxed text-neutral-700">
+              {t('dining.intro.subtitle')}
+            </p>
+          </FadeIn>
+        </section>
 
-      <main className="space-y-20 pb-16 pt-14">
-        {/* B. Présentation du restaurant */}
-        <section className="container-wide">
+        {/* Section A: Our Cuisine - Image Left, Text Right */}
+        <section className="container-wide py-14 md:py-20 border-t border-neutral-200">
           <div className="grid gap-10 md:grid-cols-2 md:items-center">
-            <FadeIn className="space-y-4">
-              <h2 className="font-display text-3xl md:text-4xl tracking-[0.18em] uppercase">
-                {t('dining.presentation.title')}
+            <FadeIn className="aspect-[16/10] w-full overflow-hidden">
+              <motion.div
+                style={{ y: imageY1, backgroundImage: `url('${diningImages[0]}')` }}
+                className="h-full w-full bg-cover bg-center shadow-sm hover:scale-105 transition-transform duration-700"
+              />
+            </FadeIn>
+
+            <FadeIn className="space-y-4 max-w-xl">
+              <h2 className="font-display text-3xl md:text-4xl tracking-[0.18em] uppercase text-neutral-900">
+                {t('dining.sections.ourCuisine.title')}
               </h2>
-              <p className="text-sm md:text-base leading-relaxed text-neutral-600">
-                {t('dining.presentation.description')}
+              <p className="text-sm md:text-base leading-relaxed text-neutral-700">
+                {t('dining.sections.ourCuisine.text')}
+              </p>
+            </FadeIn>
+          </div>
+        </section>
+
+        {/* Section B: Le Verdoyant - Text Left, Image Right */}
+        <section className="container-wide py-14 md:py-20 border-t border-neutral-200">
+          <div className="grid gap-10 md:grid-cols-2 md:items-center">
+            <FadeIn className="space-y-4 max-w-xl order-2 md:order-1">
+              <h2 className="font-display text-3xl md:text-4xl tracking-[0.18em] uppercase text-neutral-900">
+                {t('dining.sections.leVerdoyant.title')}
+              </h2>
+              <p className="text-[11px] tracking-[0.3em] uppercase text-neutral-500">
+                {t('dining.sections.leVerdoyant.subheading')}
+              </p>
+              <p className="text-sm md:text-base leading-relaxed text-neutral-700">
+                {t('dining.sections.leVerdoyant.text')}
               </p>
             </FadeIn>
 
-            <FadeIn className="h-80 md:h-96 w-full overflow-hidden rounded-sm">
-              <div
-                className="h-full w-full bg-cover bg-center"
-                style={{ backgroundImage: "url('/images/dining/Screenshot 2025-12-06 214229.png')" }}
+            <FadeIn className="aspect-[16/10] w-full overflow-hidden order-1 md:order-2">
+              <motion.div
+                style={{ y: imageY2, backgroundImage: `url('${diningImages[1]}')` }}
+                className="h-full w-full bg-cover bg-center shadow-sm hover:scale-105 transition-transform duration-700"
               />
             </FadeIn>
           </div>
         </section>
 
-        {/* C. Concept Culinaire */}
-        <section className="container-wide space-y-6">
-          <FadeIn>
-            <SectionTitle
-              title={t('dining.concept.title')}
-              subtitle={t('dining.concept.description')}
-            />
-          </FadeIn>
+        {/* Section C: The Fountain - Image Left, Text Right */}
+        <section className="container-wide py-14 md:py-20 border-t border-neutral-200">
+          <div className="grid gap-10 md:grid-cols-2 md:items-center">
+            <FadeIn className="aspect-[16/10] w-full overflow-hidden">
+              <motion.div
+                style={{ y: imageY3, backgroundImage: `url('${diningImages[2]}')` }}
+                className="h-full w-full bg-cover bg-center shadow-sm hover:scale-105 transition-transform duration-700"
+              />
+            </FadeIn>
 
-          <FadeIn className="w-full h-96 md:h-[500px] overflow-hidden rounded-sm">
-            <div
-              className="h-full w-full bg-cover bg-center"
-              style={{ backgroundImage: "url('/images/dining/Screenshot 2025-12-06 213636.png')" }}
-            />
-          </FadeIn>
+            <FadeIn className="space-y-4 max-w-xl">
+              <h2 className="font-display text-3xl md:text-4xl tracking-[0.18em] uppercase text-neutral-900">
+                {t('dining.sections.fountain.title')}
+              </h2>
+              <p className="text-sm md:text-base leading-relaxed text-neutral-700">
+                {t('dining.sections.fountain.text')}
+              </p>
+            </FadeIn>
+          </div>
         </section>
 
-        {/* D. Rooftop Experience */}
-        <section className="container-wide space-y-6">
+        {/* Section D: Rooftop Experience - Text Left, Image Right */}
+        <section className="container-wide py-14 md:py-20 border-t border-neutral-200">
           <div className="grid gap-10 md:grid-cols-2 md:items-center">
-            <FadeIn className="space-y-4 order-2 md:order-1">
-              <h2 className="font-display text-3xl md:text-4xl tracking-[0.18em] uppercase">
-                {t('dining.rooftop.title')}
+            <FadeIn className="space-y-4 max-w-xl order-2 md:order-1">
+              <h2 className="font-display text-3xl md:text-4xl tracking-[0.18em] uppercase text-neutral-900">
+                {t('dining.sections.rooftop.title')}
               </h2>
-              <p className="text-sm md:text-base leading-relaxed text-neutral-600">
-                {t('dining.rooftop.description')}
+              <p className="text-[11px] tracking-[0.3em] uppercase text-neutral-500">
+                {t('dining.sections.rooftop.subheading')}
+              </p>
+              <p className="text-sm md:text-base leading-relaxed text-neutral-700">
+                {t('dining.sections.rooftop.text')}
               </p>
             </FadeIn>
 
-            <FadeIn className="h-80 md:h-96 w-full overflow-hidden rounded-sm order-1 md:order-2">
-              <div
-                className="h-full w-full bg-cover bg-center"
-                style={{ backgroundImage: "url('/images/dining/rooftop.jpg')" }}
+            <FadeIn className="aspect-[16/10] w-full overflow-hidden order-1 md:order-2">
+              <motion.div
+                style={{ y: imageY4, backgroundImage: `url('${diningImages[3]}')` }}
+                className="h-full w-full bg-cover bg-center shadow-sm hover:scale-105 transition-transform duration-700"
               />
             </FadeIn>
           </div>
         </section>
 
-        {/* E. Petit-déjeuner */}
-        <section className="bg-brand-cream/50 py-16">
-          <div className="container-wide">
-            <div className="grid gap-10 md:grid-cols-2 md:items-center">
-              <FadeIn className="h-80 md:h-96 w-full overflow-hidden rounded-sm">
-                <div
-                  className="h-full w-full bg-cover bg-center"
-                  style={{ backgroundImage: "url('/images/dining/Screenshot 2025-12-06 214649.png')" }}
-                />
-              </FadeIn>
+        {/* Breakfast Section - Full Width */}
+        <section className="container-wide py-14 md:py-20 border-t border-neutral-200">
+          <div className="grid gap-10 md:grid-cols-2 md:items-center">
+            <FadeIn className="aspect-[16/10] w-full overflow-hidden">
+              <motion.div
+                style={{ y: imageY5, backgroundImage: `url('${diningImages[0]}')` }}
+                className="h-full w-full bg-cover bg-center shadow-sm hover:scale-105 transition-transform duration-700"
+              />
+            </FadeIn>
 
-              <FadeIn className="space-y-4">
-                <h2 className="font-display text-3xl md:text-4xl tracking-[0.18em] uppercase">
-                  {t('dining.breakfast.title')}
-                </h2>
-                <p className="text-sm md:text-base leading-relaxed text-neutral-600">
-                  {t('dining.breakfast.description')}
-                </p>
-              </FadeIn>
-            </div>
+            <FadeIn className="space-y-4 max-w-xl">
+              <h2 className="font-display text-3xl md:text-4xl tracking-[0.18em] uppercase text-neutral-900">
+                {t('dining.sections.breakfast.title')}
+              </h2>
+              <p className="text-sm md:text-base leading-relaxed text-neutral-700">
+                {t('dining.sections.breakfast.text')}
+              </p>
+            </FadeIn>
           </div>
         </section>
 
-        {/* F. Menu (PDF Download) */}
-        <section className="container-wide space-y-6">
-          <FadeIn>
-            <SectionTitle
-              title={t('dining.menu.title')}
-              subtitle={t('dining.menu.description')}
-            />
-          </FadeIn>
-
-          <FadeIn className="flex justify-center pt-4">
+        {/* Menu Download Block */}
+        <section className="container-wide py-14 md:py-20 border-t border-neutral-200">
+          <FadeIn className="max-w-2xl mx-auto text-center space-y-6">
+            <h2 className="font-display text-3xl md:text-4xl tracking-[0.18em] uppercase text-neutral-900">
+              {t('dining.menu.title')}
+            </h2>
             <a
               href="/menus/menu.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-black text-white px-6 py-3 uppercase tracking-wide rounded-md hover:bg-neutral-800 transition-colors text-xs md:text-sm"
+              className="inline-block bg-neutral-900 text-white px-8 py-3 text-xs tracking-[0.24em] uppercase hover:text-amber-700 hover:border-amber-700 border-2 border-transparent transition-colors duration-300"
             >
               {t('dining.menu.downloadButton')}
             </a>
