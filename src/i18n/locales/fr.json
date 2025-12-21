@@ -11,14 +11,17 @@
     "meetingsEvents": "RÉUNIONS & ÉVÉNEMENTS",
     "experiences": "EXPÉRIENCES",
     "offers": "OFFRES",
-    "gallery": "GALERIE"
+    "gallery": "GALERIE",
+    "contact": "CONTACT"
   },
 
   "footer": {
     "copyright": "© {{year}} Riad Alassala",
     "privacy": "Confidentialité",
     "terms": "Conditions",
-    "contact": "Contact"
+    "contact": "Contact",
+    "developedBy": "Développé par",
+    "brandMessage": "Hospitalité marocaine authentique au cœur de Fès"
   },
 
   "hero": {
@@ -81,7 +84,7 @@
       "learnMore": "Voir plus",
       "items": [
         {
-          "name": "El",
+          "name": "Mehdi",
           "country": "Suisse",
           "text": "Nous avons adoré notre séjour au Riad Alassala Fès. Le riad est magnifique, plein de charme, d’histoire et de beaux détails."
         },
@@ -564,5 +567,59 @@
     "exploringMedina": "Explorer la Médina",
     "meetingsEvents": "Réunions & Événements",
     "experiences": "Expériences"
+  },
+
+  "booking": {
+    "checkIn": "Arrivée",
+    "checkOut": "Départ",
+    "guests": "Invités",
+    "checkRates": "Voir les tarifs",
+    "roomsAndGuests": "Chambres et invités",
+    "room": "chambre",
+    "rooms": "chambres",
+    "adult": "adulte",
+    "adults": "Adultes",
+    "adultsPlural": "adultes",
+    "child": "enfant",
+    "children": "Enfants",
+    "childrenPlural": "enfants",
+    "addRoom": "+ Ajouter une chambre",
+    "maxRooms": "Maximum 4 chambres",
+    "promoCode": "Code promo",
+    "promoCodeOptional": "(optionnel)",
+    "enterPromoCode": "Entrer le code promo",
+    "search": "Rechercher"
+  },
+
+  "contact": {
+    "hero": {
+      "title": "Contact & Accès",
+      "subtitle": "Contactez-nous ou visitez-nous au cœur de la médina de Fès"
+    },
+    "form": {
+      "eyebrow": "CONTACT",
+      "title": "Envoyez-nous un message",
+      "subtitle": "Nous vous répondrons dans les plus brefs délais",
+      "name": "Nom",
+      "email": "Email",
+      "phone": "Téléphone",
+      "subject": "Sujet",
+      "message": "Message",
+      "submit": "Envoyer"
+    },
+    "info": {
+      "title": "Informations de contact",
+      "address": "Adresse",
+      "addressValue": "Médina, Fès, Maroc",
+      "phone": "Téléphone",
+      "phoneValue": "+212 XXX XXX XXX",
+      "whatsapp": "WhatsApp",
+      "whatsappValue": "+212 XXX XXX XXX",
+      "email": "Email",
+      "emailValue": "contact@riadalassala.com"
+    },
+    "social": {
+      "title": "Suivez-nous"
+    }
   }
 }

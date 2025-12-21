@@ -12,15 +12,15 @@ export default function Hero({ title, subtitle, showBooking = false, backgroundI
   const imageUrl = backgroundImage ? `url('${backgroundImage}')` : defaultImage;
 
   return (
-    <section className="relative h-[70vh] min-h-[420px] w-full overflow-hidden bg-neutral-900">
+    <section className="relative h-[70vh] min-h-[420px] w-full bg-neutral-900 overflow-visible">
       <motion.div
         style={{ y, backgroundImage: imageUrl }}
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center overflow-hidden"
       />
       <div className="absolute inset-0 bg-black/40" />
 
-      <div className="relative flex h-full flex-col justify-end pb-10">
-        <div className="container-wide flex flex-col gap-8">
+      <div className="relative flex h-full flex-col justify-end pb-10 z-10 overflow-visible">
+        <div className="container-wide flex flex-col gap-8 overflow-visible">
           <div className="max-w-2xl space-y-3 text-white">
             <p className="text-xs tracking-[0.25em] uppercase text-neutral-200">
               {t('hero.luxuryRiad')}
@@ -36,7 +36,7 @@ export default function Hero({ title, subtitle, showBooking = false, backgroundI
           </div>
 
           {showBooking && (
-            <div className="flex justify-start">
+            <div className="flex justify-start relative z-50 overflow-visible">
               <BookingWidget />
             </div>
           )}

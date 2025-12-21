@@ -11,13 +11,16 @@
     "meetingsEvents": "MEETINGS & EVENTS",
     "experiences": "EXPERIENCES",
     "offers": "OFFERS",
-    "gallery": "GALLERY"
+    "gallery": "GALLERY",
+    "contact": "CONTACT"
   },
   "footer": {
     "copyright": "© {{year}} Riad Alassala",
     "privacy": "Privacy",
     "terms": "Terms",
-    "contact": "Contact"
+    "contact": "Contact",
+    "developedBy": "Developed by",
+    "brandMessage": "Authentic Moroccan hospitality in the heart of Fes"
   },
   "hero": {
     "luxuryRiad": "Luxury Riad • Fes Medina"
@@ -79,7 +82,7 @@
       "learnMore": "Learn more",
       "items": [
         {
-          "name": "El",
+          "name": "Mehdi",
           "country": "Switzerland",
           "text": "We loved our stay at Riad Alassala Fès. The riad is magnificent, full of charm, history, and beautiful details."
         },
@@ -93,11 +96,7 @@
           "country": "France",
           "text": "Well located riad with warm, attentive staff and great cuisine. Excellent arrangements for excursions."
         },
-        {
-          "name": "Lahcen",
-          "country": "Germany",
-          "text": "Very friendly team. Perfect location for exploring the medina."
-        },
+       
         {
           "name": "Faycal",
           "country": "France",
@@ -562,5 +561,59 @@
     "exploringMedina": "Exploring Medina",
     "meetingsEvents": "Meetings & Events",
     "experiences": "Experiences"
+  },
+
+  "booking": {
+    "checkIn": "Check In",
+    "checkOut": "Check Out",
+    "guests": "Guests",
+    "checkRates": "Check Rates",
+    "roomsAndGuests": "Rooms and guests",
+    "room": "room",
+    "rooms": "rooms",
+    "adult": "adult",
+    "adults": "Adults",
+    "adultsPlural": "adults",
+    "child": "child",
+    "children": "Children",
+    "childrenPlural": "children",
+    "addRoom": "+ Add room",
+    "maxRooms": "Max 4 rooms",
+    "promoCode": "Promo code",
+    "promoCodeOptional": "(optional)",
+    "enterPromoCode": "Enter promo code",
+    "search": "Search"
+  },
+
+  "contact": {
+    "hero": {
+      "title": "Contact & Location",
+      "subtitle": "Get in touch with us or visit us in the heart of Fes medina"
+    },
+    "form": {
+      "eyebrow": "CONTACT",
+      "title": "Send us a message",
+      "subtitle": "We'll get back to you as soon as possible",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message"
+    },
+    "info": {
+      "title": "Contact Information",
+      "address": "Address",
+      "addressValue": "Medina, Fes, Morocco",
+      "phone": "Phone",
+      "phoneValue": "+212 XXX XXX XXX",
+      "whatsapp": "WhatsApp",
+      "whatsappValue": "+212 XXX XXX XXX",
+      "email": "Email",
+      "emailValue": "contact@riadalassala.com"
+    },
+    "social": {
+      "title": "Follow Us"
+    }
   }
 }

@@ -12,7 +12,8 @@ const navItems = [
   { key: 'meetingsEvents', to: '/meetings-events' },
   { key: 'experiences', to: '/experiences' },
   { key: 'offers', to: '/offers' },
-  { key: 'gallery', to: '/gallery' }
+  { key: 'gallery', to: '/gallery' },
+  { key: 'contact', to: '/contact' }
 ];
 
 export default function Navbar() {

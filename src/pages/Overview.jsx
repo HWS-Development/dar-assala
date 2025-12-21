@@ -29,8 +29,8 @@ export default function Overview() {
         showBooking
       />
 
-      <main className="space-y-20 pb-16 pt-14">
-        <section className="container-wide flex flex-col items-center gap-10 text-center">
+      <main className="space-y-20 pb-16 pt-14 relative z-0">
+        <section className="sticky top-0 z-10 bg-brand-cream py-8 container-wide flex flex-col items-center gap-10 text-center">
           <FadeIn className="max-w-2xl space-y-4">
             <h2 className="font-display text-3xl md:text-4xl tracking-[0.22em] uppercase">
               {t('overview.intro.title')}

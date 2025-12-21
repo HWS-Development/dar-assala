@@ -71,6 +71,28 @@ export default function Footer() {
           </div>
         </div>
       </div>
+
+      {/* Bottom Bar - Developer Credit & Brand Message */}
+      <div className="border-t border-neutral-200">
+        <div className="container-wide py-4">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 text-center">
+            <span className="text-[11px] tracking-[0.24em] uppercase text-neutral-500">
+              {t('footer.developedBy')}{' '}
+              <a
+                href="https://hospitalitywebservices.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-neutral-500 hover:text-amber-700 transition-colors"
+              >
+                HWS
+              </a>
+            </span>
+            <span className="text-[11px] tracking-[0.24em] uppercase text-neutral-500">
+              {t('footer.brandMessage')}
+            </span>
+          </div>
+        </div>
+      </div>
     </footer>
   );
 }
