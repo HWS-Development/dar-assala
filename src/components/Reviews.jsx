@@ -246,22 +246,7 @@ export default function Reviews() {
                     transition={{ delay: 0.5, duration: 0.5 }}
                     className="mt-6 relative z-10"
                   >
-                    <motion.button
-                      whileHover={{ x: 4 }}
-                      className="text-xs tracking-[0.2em] uppercase text-neutral-600 hover:text-amber-700 transition-colors flex items-center gap-2 group"
-                    >
-                      <span>{t('overview.reviews.learnMore')}</span>
-                      <motion.svg
-                        className="w-4 h-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        animate={{ x: [0, 4, 0] }}
-                        transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                      </motion.svg>
-                    </motion.button>
+                  
                   </motion.div>
                 </motion.div>
               </motion.div>
